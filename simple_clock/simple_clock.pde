@@ -1,53 +1,34 @@
-// step 1 code: declaring variables for the clock
 int clockCentreX, clockCentreY;
 float secondsRadius;
 float minutesRadius;
 float hoursRadius;
 float clockDiameter;
 
-// step 2 code: 
 void setup() {
 
-// set the size of the canvas
 size(400, 400);
-
-// coords of centre of clock
 clockCentreX = width / 2;
 clockCentreY = height / 2;
- 
-// 'width' and 'height' are keywords
-// define the maximum radius that 
-// could be used, local variable
 int maxRadius = min(width, height) / 2;
-
-// scale the 'maxRadius' variable 
-// to define the
-// other radii required
-// avoids hardcoding
 secondsRadius = maxRadius * 0.72;
 minutesRadius = maxRadius * 0.60;
 hoursRadius = maxRadius * 0.50;
 clockDiameter = maxRadius * 1.8;
 }
 
-// step 3 code: 
 void draw() {
   int all_black = 0;
   int all_grey = 80;
   int all_white = 255;
   background(all_black, all_black, all_black);
- 
-  // Draw the clock background
   fill(all_grey, all_grey, all_grey);
   noStroke();
   ellipse(clockCentreX, clockCentreY, clockDiameter, clockDiameter); 
 
-  // step 4 code: TWO_PI and HALF_PI are keywords
   float second_angle = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
   float minute_angle = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
   float hour_angle = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 
-// step 5 code: control the colour of the hand
   stroke(all_white, all_white, all_white);
   // control the thickness of the hand 
   strokeWeight(1);
@@ -59,7 +40,7 @@ void draw() {
   strokeWeight(4);
   line(clockCentreX, clockCentreY, clockCentreX + cos(hour_angle) * hoursRadius, clockCentreY + sin(hour_angle) * hoursRadius);
 
-// step 6 code: 
+
   strokeWeight(2);
   beginShape(POINTS);
   for (int degrees = 0; degrees < 360; degrees+=6) {
