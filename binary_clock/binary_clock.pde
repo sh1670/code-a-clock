@@ -2,14 +2,18 @@ int on_colour = 255;
 int off_colour = 0;
   
 void setup() {
-  size(340, 200);
+  size(360, 210);
   smooth();
   noStroke();
 }
 
 void draw() {
   background(off_colour);
-  String  bin_time_str = nf(int(binary(hour())),6)+nf(int(binary(minute())),6)+nf(int(binary(second())),6);
+  int hours = int(binary(hour()));
+  int mins = int(binary(minute()));
+  int secs = int(binary(second()));
+  
+  String  bin_time_str = nf(hours,6)+nf(mins,6)+nf(secs,6);
   
   int i=0;
   for(int row=0; row<3; row++){
@@ -19,7 +23,7 @@ void draw() {
       } else {
         fill(off_colour);
       }
-      ellipse(20+50*col,25+50*row,50,50);
+      ellipse(55+50*col,55+50*row,50,50);
       i++;
     }
    }
