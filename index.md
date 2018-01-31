@@ -3,10 +3,13 @@ title: Code A Clock Workshop
 ---
 ![swirly clock](images/swirly.jpg)
 ![flippy clock](images/flipclock.png)
+
 ## Workshop Objective: Reinvent the Clock
 
 #### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
-Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
+
+
+>Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
 
 However, do feel free to let your creativity run wild... feel free to go 'off piste' and go beyond the challenges we've laid out here. Who knows, you might just reinvent the concept of time! 😜
 
