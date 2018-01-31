@@ -1,32 +1,46 @@
-code-a-clock
-sketching with code using Processing
 
-
-
-
-What is Processing?
-In this activity you will be using Processing (https://processing.org) a Java based flexible software sketchbook.  The Processing programming environment might seem familiar to those of you who have used an Integrated Development Environment (IDE) before, however experience with IDE’s is not a prerequisite for this workshop, so do not worry if some of this looks unfamiliar at first!
-
-Processing is easy for learning how to code while creating visual art. Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects. Visit this link to see some of the examples of interesting prototypes and projects developed by other people who used processing : https://processing.org/exhibition/
-Workshop Objective: Reinvent the Clock
-The overall objective of this workshop is simple. Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time. Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
+## Workshop Objective: Reinvent the Clock
+#### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
+Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
 
 However, do feel free to let your creativity run wild... feel free to go 'off piste' and go beyond the challenges we've laid out here. Who knows, you might just reinvent the concept of time! 😜
 
+---
+
+## What is Processing?
+#### In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.
+
+_If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. _
 
 
-14:15 Intro
-14:20 Pen up, pen down
-14:35 Playing with time
-14:50 Group Work
-15:10 Show and tell
-Pen Up, Pen Down
-
-First off we are going to create a simple drawing program from scratch.
-Start up Processing and then follow the steps below. Please ask a teaching assistant if you need any help!
+Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. There are both Javascript and Java variants, but today we'll be using the Java.
 
 
-                       starting point for the sketch                end result
+The Processing programming environment might seem familiar to those of you who have used an Integrated Development Environment _(IDE)_ before, however experience with IDE’s is not a prerequisite for this workshop, so do not worry if some of this looks unfamiliar at first!
+
+Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.
+[Visit this link](https://processing.org/exhibition/) to see some of the examples of interesting prototypes and projects.
+
+
+
+---
+### Timings
+This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
+- 14:15 Intro
+- 14:20 Pen up, pen down
+- 14:35 Playing with time
+- 14:50 Group Work
+- 15:10 Presentations
+---
+
+## PenUp, PenDown
+
+#### First off we are going to create a simple drawing program.
+
+>If you have any questions at any point, please ask a teaching assistant for help!
+
+
+ starting point for the sketch                end result
 
 
 Objective
@@ -111,10 +125,11 @@ Modulo i.e. % .
 
 
 
+---
 
 
-Playing with Time
-In this exercise you will be creatively modifying the code for a program that draws a working clock.
+## Playing with Time
+#### In this exercise you will be creatively modifying the code for a program that draws a working clock.
 
 First create a new Processing sketch (File -> New)
 
@@ -185,6 +200,12 @@ void draw() {
 
 Now press the play button and it you should have a clock that looks like this:
 
+
+
+
+---
+
+
 Great - now try hacking the clock by trying some of the challenges below, feel free to pick and choose, no need to do them in order. Also, it's no problem to go beyond the challenges and try just generally playing around with the code. Once you've tried this version, try the other two example clocks below. If you need any help, please ask a teaching assistant!
 
 Challenge
@@ -211,6 +232,11 @@ Challenge 4:  Can you give another time-zone clock e.g. Beijing time, New York t
 
 How about also swapping between time zones with a click of the mouse?
 Find the change in minute_angle and hour_angle that correspond to the time-zone difference.
+
+
+
+
+---
 
 
 done? ...there are two more clock examples to hack below!
@@ -262,8 +288,7 @@ This clock lays the hours, minutes and seconds out in a table and highlights the
                    }
 
 Binary Clock
-This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.  
-
+This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.
 
 
 The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39? Can you tell why?
@@ -325,10 +350,10 @@ http://www.jacopocolo.com/hexclock/ using time as RGB values, multipliers for st
 
 
 
+---
 
-
-Show and Tell
-Time to show off your new creations!
+## Show and Tell
+#### Time to show off your new creations!
 Can the other groups read the time on your new clock?
 Would they want a version on their wall at home?
 Did you use any interesting hacks in your code that you can explain to the other groups?
@@ -341,8 +366,11 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 
 
-
+---
 
 LINKS:
-This worksheet is here: https://tinyurl.com/y9cuqury
+This worksheet is here:
+* original - https://tinyurl.com/y9cuqury
+* new - https://lukestorry.co.uk/code-a-clock/
+
 Processing reference: https://processing.org/reference/
