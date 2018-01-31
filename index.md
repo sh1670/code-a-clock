@@ -299,9 +299,11 @@ Processing reference: https://processing.org/reference/
 ---
 ---
 
-Example Clocks
+## Example Clocks
 
-### Simple Text Clock
+---
+
+### Simple Text Clock
 This clock is a simple text-only clock
 ```java
 void setup() {
@@ -321,6 +323,8 @@ void draw() {
   text(time_string,10,30);
 }
 ```
+
+---
 
 ### Linear Clock
 This clock lays the hours, minutes and seconds out in a table and highlights the current time.
@@ -370,6 +374,8 @@ void draw(){
      hours = hour();
      }
 ```
+
+---
 
 ### Binary Clock
 This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.
