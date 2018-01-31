@@ -3,7 +3,6 @@ title: Code A Clock Workshop
 ---
 
 ![swirly clock](images/swirly.jpg)
-
 ![flippy clock](images/flipclock.png)
 
 ## Workshop Objective: Reinvent the Clock
@@ -100,14 +99,16 @@ To do this you’ll need to use an `if` statement: “if mouse is clicked draw a
 ```java
 if (test) {
   // statements
-} ```
+}
+```
 
 The `mousePressed` variable is `true` when any mouse button is pressed. It is `false` otherwise.
 
 ```java
 if (mousePressed) {
  // code to draw an ellipse
-}```
+}
+```
 
 ### Step 4:
 Your program should now effectively be a pen up and pen down program now.
