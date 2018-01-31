@@ -2,9 +2,9 @@
 title: Code A Clock Workshop
 ---
 
-![swirly clock](images/swirly.jpg)
-![flippy clock](images/flipclock.png)
-![text clock](images/textclock.jpg)
+
+![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
+:---:|:---:|:--:
 
 ## Workshop Objective: Reinvent the Clock
 
