@@ -43,104 +43,84 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 
 
-#### Step 1:
+### Step 1:
 Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
 
-S_et up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works._
+_Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works._
 
 
-
-
-<details><summary>More Info</summary><p>
-
-The `setup()` function is run once, when the program starts, and sets up the window and the main processing program:
-
+>The `setup()` function is run once, when the program starts, and sets up the window and the main processing program:
 ```java
 void setup( ){
 // Main code
-}
-```
-
+} ```
 The `size()` function defines the dimensions of the screen:
 ```java
-      size(height, width);
-      size(500, 500);
-```
-
+size(height, width);
+size(500, 500); ```
 The `background()` function controls the colour of the screen:
-
 ```java
-      background(red, green, blue)
-      background(100, 120, 90);
-```
-
+background(red, green, blue)
+background(100, 120, 90); ```
 _If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
 
 
-The `draw()` function is repeatedly called whilst your sketch is running, this is where we'll put the fun stuff later.
+### Step 2:
+If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
+This function is repeatedly called whilst your sketch is running.
 
-</p></details>
+_The objective is to try and create a shape on the screen with your mouse._
 
-#### Step 2:
-If you have successfully created a screen in your `setup()` function, now create a draw loop with draw().
-
-The objective is to try and create a shape on the screen with your mouse.
-
-Also try to make the shape change colour by changing the variable values given to fill.
-The draw function continuously executes until the loop is stopped:
-Void draw(){
-  // executed code
-}
-
-The ellipse function draws an ellipse with given width and height:
-ellipse(centre_x, centre_y, width, height)
-ellipse(250, 250, 100, 50);
-
-The fill function can be used to control the colour of shapes:
+>The `fill` function can be used to control the colour of shapes:
+```java
 fill(red, green, blue)
-fill(200, 200, 200);
+fill(200, 200, 200);```
+The `ellipse()` function draws an ellipse at a given location, with given width and height:
+```java
+ellipse(centre_x, centre_y, width, height)
+ellipse(250, 250, 100, 50);```
 
 
 
 
 
 
-Step 3:  Assuming that your program now draws an ellipse on a blank screen, try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
-To do this you’ll need to use an if statement; “if mouse is clicked draw an ellipse, else do nothing”.
-If statements allow you to write some code which is only executed if some test condition is true:
+### Step 3:
+Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
+
+To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
+
+>If statements allow you to write some code which is only executed if some test condition is true:
+```java
 if (test) {
   // statements
-}
-
-
-The mousePressed variable is true when any mouse button is pressed. It is false otherwise.
-If (mousePressed) {
+} ```
+The `mousePressed` variable is `true` when any mouse button is pressed. It is `false` otherwise.
+```java
+if (mousePressed) {
  // code to draw an ellipse
-}
-Step 4: Your program should now effectively be a pen up and pen down program now. However a pen that doesn't move is useless.
+}```
 
-To make it more realistic use the mouseX and mouseY variables to draw your ellipse based on where you put your mouse on the screen i.e. a pen that moves.
+### Step 4:
+Your program should now effectively be a pen up and pen down program now.
+However, a pen that doesn't move is useless.
 
-Congratulations. If you complete the above you have completed the exercise. If:
-Try using a different conditional statement. I.e. replace the if statement with either a for-loop, a while-loop or a do-while-loop
-Change the colour with of the ellipse with every mouse click !
-Change the size of the ellipse with every mouse click.
-
-The mouseX, and mouseY variables contain the X and Y coordinates of the mouse respectively.
-
-ellipse(mouseX, mouseY, 100, 50);
+>To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
 
 
 
+### Congratulations.
+You should now have a simple painting program in Processing.
+
+Here are a few extensions you could try:
+- Try using a different conditional statement. I.e. replace the if statement with either a for-loop, a while-loop or a do-while-loop
+- Change the colour with of the ellipse with every mouse click !
+- Change the size of the ellipse with every mouse click.
 
 
-
-Fun things to google:
-while() and for()
-Modulo i.e. % .
 
 
 
