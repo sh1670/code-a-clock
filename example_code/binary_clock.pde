@@ -1,6 +1,7 @@
 int on_colour = 255;
-int off_colour = 0;
-  
+int off_colour = 30;
+int back_colour = 0;
+
 void setup() {
   size(360, 210);
   smooth();
@@ -8,13 +9,13 @@ void setup() {
 }
 
 void draw() {
-  background(off_colour);
+  background(back_colour);
   int hours = int(binary(hour()));
   int mins = int(binary(minute()));
   int secs = int(binary(second()));
-  
+
   String  bin_time_str = nf(hours,6)+nf(mins,6)+nf(secs,6);
-  
+
   int i=0;
   for(int row=0; row<3; row++){
     for(int col=0; col<6; col++){
@@ -27,5 +28,4 @@ void draw() {
       i++;
     }
    }
-
 }

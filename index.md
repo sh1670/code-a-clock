@@ -140,46 +140,44 @@ Here are a few extensions you could try:
 
 First create a new Processing sketch (File -> New)
 
-Then copy and paste in the code below:
-
-{% include_relative example_code/simple_clock.pde %}
-
+Then copy and paste in [this example code](example_code/simple_clock.pde):
 
 
 Now press the play button and it you should have a clock that looks like this:
 
-
-
+![simple clock screenshot](images/screenshot_simple.png)
 
 ---
 
 
-Great - now try hacking the clock by trying some of the challenges below, feel free to pick and choose, no need to do them in order. Also, it's no problem to go beyond the challenges and try just generally playing around with the code. Once you've tried this version, try the other two example clocks below. If you need any help, please ask a teaching assistant!
+Great - now try hacking the clock by trying some of the challenges below, feel free to pick and choose, no need to do them in order. Also, it's no problem to go beyond the challenges and try just generally playing around with the code.
+Once you've tried this version, try the other two example clocks below.
 
-Challenge
-Try Hint
+>If you need any help, please ask a teaching assistant!
 
-Challenge 1:  Can you make the appearance of this clock nicer by changing its background color, the color and length of its hands, and the number of points of the color, for example?
-Colours are given in (Red, Green and Blue) values
-0 means none of that colour and 255 means full.
 
+#### Challenge 1:
+Can you make the appearance of this clock nicer by changing its background color, the color and length of its hands, and the number of points of the color, for example?
+
+>Colours are given in (Red, Green and Blue) values, 0 means none of that colour and 255 means full.
 To make purple you mix red and blue, so try (255, 0, 255).
 
 
-Challenge 2: Can you make a clock with only hour and minute hands?
-Where is the line of code that draws the second hand?
-
+#### Challenge 2:
+Can you make a clock with only hour and minute hands?
+>Where is the line of code that draws the second hand?
 Rather than deleting it, you can comment it out using two forward slashes.
 
-// like this!
-Challenge 3: Can you give a snapshot of some fixed time such as 18:45pm?
 
+#### Challenge 3:
+Can you give a snapshot of some fixed time such as 18:45pm?
+>Try setting the minute_angle and hour_angle by hand in order to show a certain time on the clock.
 
-Try setting the minute_angle and hour_angle by hand in order to show a certain time on the clock.
-Challenge 4:  Can you give another time-zone clock e.g. Beijing time, New York time?
-
+#### Challenge 4:
+Can you give another time-zone clock e.g. Beijing time, New York time?
 How about also swapping between time zones with a click of the mouse?
-Find the change in minute_angle and hour_angle that correspond to the time-zone difference.
+
+>Find the change in minute_angle and hour_angle that correspond to the time-zone difference.
 
 
 
@@ -187,110 +185,51 @@ Find the change in minute_angle and hour_angle that correspond to the time-zone 
 ---
 
 
-done? ...there are two more clock examples to hack below!
+done?
+
+Here are more clock examples to hack and play around with below!
 
 
-Linear Clock
-This clock lays the hours, minutes and seconds out in a table and highlights the current time. How about playing around by removing all the lines, or creating a different shade for each block?
+### Linear Clock
+This clock lays the hours, minutes and seconds out in a table and highlights the current time.
 
+How about playing around by removing all the lines, or creating a different shade for each block?
+![Linear Clock](images/screenshot_linear.png)
+[Sourcecode](example_code/linear_clock.pde)
 
-
-             int WIDTH = 960;
-              int HEIGHT = 600;
-              void setup(){;
-                           size(960, 600);
-                           }
-              int seconds = 0;
-              int minutes = 0;
-              int hours = 0;
-              void draw(){
-                    background(20, 135, 196);
-                   //draw update rectangles per second, minute and hour
-                    fill((seconds*4)%255, 50, 50);
-                    rect(WIDTH/60*seconds, 3*HEIGHT/4, WIDTH/60, HEIGHT/4);
-                    fill((minutes*4)%4, 87, 100);
-                    rect(WIDTH/60*minutes, HEIGHT/3, WIDTH/60, 5*HEIGHT/12);
-                    fill(56, 16, 178);
-                    rect(WIDTH/24*hours, 0, WIDTH/24, HEIGHT/3);
-                   //draw grid
-                    for(int i=0; i<WIDTH; i+=WIDTH/24){
-                          line(i, 0, i, HEIGHT/3);
-                          fill(196, 251, 252);
-                          text(i/40,i+6, HEIGHT/6);
-                                              }
-                    line(0, HEIGHT/3, WIDTH, HEIGHT/3);
-                    for(int i=0; i<WIDTH; i+= WIDTH/60){
-                    line(i, HEIGHT/3, i, 3*HEIGHT/4);
-                    fill(196, 251, 252);
-                    text(i/16, i+2, 3*HEIGHT/5);
-                                }
-                    line(0, 3*HEIGHT/4, WIDTH, 3*HEIGHT/4);
-                    for(int i=0; i<WIDTH; i += WIDTH/60){
-                    line(i, 3*HEIGHT/4, i, HEIGHT);
-                    fill(216, 251, 255);
-                    text(i/16, i+2, 9*HEIGHT/10);
-                     }
-                    seconds = second();
-                   minutes = minute();
-                   hours = hour();
-                   }
-
-Binary Clock
+### Binary Clock
 This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.
 
+![Binary Clock](images/screenshot_binary.png)
 
-The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39? Can you tell why?
-You can translate this binary clock to decimal clock by using some online binary converter here.
+The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39?
+Can you tell why?
 
-int on_colour = 255;
-int off_colour = 30;
-int back_colour = 0;
-
-void setup() {
-  size(360, 210);
-  smooth();
-  noStroke();
-}
-
-void draw() {
-  background(back_colour);
-  int hours = int(binary(hour()));
-  int mins = int(binary(minute()));
-  int secs = int(binary(second()));
-
-  String  bin_time_str = nf(hours,6)+nf(mins,6)+nf(secs,6);
-
-  int i=0;
-  for(int row=0; row<3; row++){
-    for(int col=0; col<6; col++){
-      if (bin_time_str.charAt(i) == '1') {
-        fill(on_colour);
-      } else {
-        fill(off_colour);
-      }
-      ellipse(55+50*col,55+50*row,50,50);
-      i++;
-    }
-   }
-}
+(SourceCode)[example_code/binary_clock.pde]
 
 
+---
+---
 
-Group work: invent your own clock
-Team up! Group with your neighbours into teams of four people.
+## Group work: invent your own clock
 
-Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own. At the end each group will have a minute to present their new clock idea!
+#### Team up! Group with your neighbours into teams of four people.
+
+
+**Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own.
+At the end each group will have a minute to present their new clock idea!**
 
 Time to get creative!
 
+
 Here's some ideas as starting points!
-Play with colour - can you tell the time just by colour?   http://www.pantoneclock.com
-Think about shape.
-Is your new clock simple to read or fiendishly complex?
-Think about scale. Is your clock good for looking at seconds or does it work over years?
-Can you make a stopwatch?
-Smooth seconds using millis() and adjusting map()
-http://www.jacopocolo.com/hexclock/ using time as RGB values, multipliers for stronger colours
+* Play with colour - can you tell the time just by colour?   http://www.pantoneclock.com
+* Think about shape.
+* Is your new clock simple to read or fiendishly complex?
+* Think about scale. Is your clock good for looking at seconds or does it work over years?
+* Can you make a stopwatch?
+* Smooth seconds using millis() and adjusting map()
+* http://www.jacopocolo.com/hexclock/ using time as RGB values, multipliers for stronger colours
 
 
 
