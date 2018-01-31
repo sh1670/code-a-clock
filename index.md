@@ -59,7 +59,7 @@ Set up the minimum program by putting numbers into the code in the above screens
 
 
 >The `setup()` function is run once, when the program starts, and sets up the window and the main processing program
-> 
+>
 > The `size()` function defines the dimensions of the screen:
 `size(height, width);`, `size(500, 500);`.
 
@@ -75,14 +75,10 @@ This function is repeatedly called whilst your sketch is running.
 
 _The objective is to try and create a shape on the screen with your mouse._
 
->The `fill` function can be used to control the colour of shapes:
-```java
-fill(red, green, blue)
-fill(200, 200, 200);```
-The `ellipse()` function draws an ellipse at a given location, with given width and height:
-```java
-ellipse(centre_x, centre_y, width, height)
-ellipse(250, 250, 100, 50);```
+>The `fill` function can be used to control the colour of shapes: `fill(red, green, blue)`, `fill(200, 200, 200);`.
+
+>The `ellipse()` function draws an ellipse at a given location, with given width and height:
+`ellipse(centre_x, centre_y, width, height);`, `ellipse(250, 250, 100, 50);`.
 
 
 ---
@@ -92,11 +88,14 @@ Your program should now draw an ellipse on a blank screen. Try refactoring/chang
 To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
 
 >If statements allow you to write some code which is only executed if some test condition is true:
+
 ```java
 if (test) {
   // statements
 } ```
+
 The `mousePressed` variable is `true` when any mouse button is pressed. It is `false` otherwise.
+
 ```java
 if (mousePressed) {
  // code to draw an ellipse
