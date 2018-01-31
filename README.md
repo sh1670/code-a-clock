@@ -6,10 +6,13 @@ Workshop created for use as a demonstration lab session for UoB open days / appl
 
 https://lukestorry.co.uk/code-a-clock/
 
+---
 
-![swirly clock](images/swirly.jpg)
-![flippy clock](images/flipclock.png)
 
+![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
+:---:|:---:|:--:
+
+---
 
 ### Workshop Objective: Reinvent the Clock
 
@@ -27,10 +30,7 @@ However, do feel free to let your creativity run wild... feel free to go 'off pi
 _If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. _
 
 
-Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. There are both Javascript and Java variants, but today we'll be using the Java.
-
-
-The Processing programming environment might seem familiar to those of you who have used an Integrated Development Environment _(IDE)_ before, however experience with IDE’s is not a prerequisite for this workshop, so do not worry if some of this looks unfamiliar at first!
+> Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. 
 
 Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.
 [Visit this link](https://processing.org/exhibition/) to see some of the examples of interesting prototypes and projects.
