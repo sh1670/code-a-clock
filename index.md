@@ -44,17 +44,16 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 
 #### Step 1:
-Create the start of your program, using size() to define the dimensions of the screen and background() to define the colour.
+Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
 
-Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works.
+S_et up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works._
 
 
 
 
-<details>
-<summary>More Info</summary>
+<details><summary>More Info</summary><p>
 
 The `setup()` function is run once, when the program starts, and sets up the window and the main processing program:
 
@@ -82,10 +81,10 @@ _If you are an experienced programmer, you can declare and define variables/cons
 
 The `draw()` function is repeatedly called whilst your sketch is running, this is where we'll put the fun stuff later.
 
-</details>
+</p></details>
 
 #### Step 2:
-If you have successfully created a screen in your setup() function, now create a draw loop with draw().
+If you have successfully created a screen in your `setup()` function, now create a draw loop with draw().
 
 The objective is to try and create a shape on the screen with your mouse.
 
