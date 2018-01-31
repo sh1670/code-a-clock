@@ -47,34 +47,28 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 >If you have any questions at any point, please ask a teaching assistant for help!
 
-![penup-pendown screenshot](images/screenshot_penupdown.png)penup-pendown screenshot
+![penup-pendown screenshot](images/screenshot_penupdown.png)
 
-
-
+---
 ### Step 1:
 Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
 
-_Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works._
+Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works.
 
 
->The `setup()` function is run once, when the program starts, and sets up the window and the main processing program:
-```java
-void setup( ){
-// Main code
-} ```
-The `size()` function defines the dimensions of the screen:
-```java
-size(height, width);
-size(500, 500); ```
-The `background()` function controls the colour of the screen:
-```java
-background(red, green, blue)
-background(100, 120, 90); ```
+>The `setup()` function is run once, when the program starts, and sets up the window and the main processing program
+> 
+> The `size()` function defines the dimensions of the screen:
+`size(height, width);`, `size(500, 500);`.
+
+>The `background()` function controls the colour of the screen: `background(red, green, blue);`, `background(100, 120, 90);`.
+
+
 _If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
 
-
+---
 ### Step 2:
 If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
 This function is repeatedly called whilst your sketch is running.
@@ -91,11 +85,7 @@ ellipse(centre_x, centre_y, width, height)
 ellipse(250, 250, 100, 50);```
 
 
-
-
-
-
-
+---
 ### Step 3:
 Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
