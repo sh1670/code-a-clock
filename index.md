@@ -4,6 +4,7 @@ title: Code A Clock Workshop
 
 ![swirly clock](images/swirly.jpg)
 ![flippy clock](images/flipclock.png)
+![text clock](images/textclock.jpg)
 
 ## Workshop Objective: Reinvent the Clock
 
@@ -38,17 +39,20 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 ### Timings
 This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
 - 14:15 Intro
-- 14:20 Pen up, pen down
-- 14:35 Playing with time
-- 14:50 Group Work
-- 15:10 Presentations
+- 14:20 Intro to Processing - Drawing Program
+- 14:35 Clock Program Challenges - Playing with Time
+- 14:50 Group Work - Design a New Clock
+- 15:10 Presentations
 
 
 ---
 ---
 
 
-## PenUp, PenDown
+
+
+
+# Intro to Processing - Drawing Program
 
 #### First off we are going to create a simple drawing program.
 
@@ -132,8 +136,8 @@ Here are a few extensions you could try:
 
 ---
 
-
-## Playing with Time
+
+# Clock Program Challenges - Playing with Time
 #### In this exercise you will be creatively modifying the code for a program that draws a working clock.
 
 First create a new Processing sketch (File -> New)
@@ -245,7 +249,7 @@ Here are more clock examples to hack and play around with below!
 
 ---
 
-## Group work: invent your own clock
+# Group work: Design Your Own Clock
 
 #### Team up! Group with your neighbours into teams of four people.
 
@@ -273,7 +277,7 @@ Here's some ideas as starting points!
 
 ---
 
-## Show and Tell
+## Presentations
 #### Time to show off your new creations!
 Can the other groups read the time on your new clock?
 Would they want a version on their wall at home?
@@ -289,7 +293,8 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 ---
 
-LINKS:
+## LINKS:
+
 This worksheet is here:
 * original - https://tinyurl.com/y9cuqury
 * new - https://lukestorry.co.uk/code-a-clock/
@@ -297,9 +302,12 @@ This worksheet is here:
 Processing reference: https://processing.org/reference/
 
 ---
+
 ---
 
-## Example Clocks
+---
+
+# Example Clocks
 
 ---
 
@@ -331,49 +339,7 @@ This clock lays the hours, minutes and seconds out in a table and highlights the
 
 How about playing around by removing all the lines, or creating a different shade for each block?
 ![Linear Clock](images/screenshot_linear.png)
-
-[Sourcecode](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/linear_clock.pde)
-```java
-int WIDTH = 960;
-int HEIGHT = 600;
-void setup(){;
-             size(960, 600);
-             }
-int seconds = 0;
-int minutes = 0;
-int hours = 0;
-void draw(){
-      background(20, 135, 196);
-     //draw update rectangles per second, minute and hour
-      fill((seconds*4)%255, 50, 50);
-      rect(WIDTH/60*seconds, 3*HEIGHT/4, WIDTH/60, HEIGHT/4);
-      fill((minutes*4)%4, 87, 100);
-      rect(WIDTH/60*minutes, HEIGHT/3, WIDTH/60, 5*HEIGHT/12);
-      fill(56, 16, 178);
-      rect(WIDTH/24*hours, 0, WIDTH/24, HEIGHT/3);
-     //draw grid
-      for(int i=0; i<WIDTH; i+=WIDTH/24){
-            line(i, 0, i, HEIGHT/3);
-            fill(196, 251, 252);
-            text(i/40,i+6, HEIGHT/6);
-                                }
-      line(0, HEIGHT/3, WIDTH, HEIGHT/3);
-      for(int i=0; i<WIDTH; i+= WIDTH/60){
-      line(i, HEIGHT/3, i, 3*HEIGHT/4);
-      fill(196, 251, 252);
-      text(i/16, i+2, 3*HEIGHT/5);
-                  }
-      line(0, 3*HEIGHT/4, WIDTH, 3*HEIGHT/4);
-      for(int i=0; i<WIDTH; i += WIDTH/60){
-      line(i, 3*HEIGHT/4, i, HEIGHT);
-      fill(216, 251, 255);
-      text(i/16, i+2, 9*HEIGHT/10);
-       }
-      seconds = second();
-     minutes = minute();
-     hours = hour();
-     }
-```
+[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/linear_clock.pde)
 
 ---
 
@@ -385,40 +351,18 @@ This clock lays the hours, minutes and seconds out in binary. The first line is 
 The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39?
 Can you tell why?
 
- [Sourcecode](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/binary_clock.pde)
-```java
-int on_colour = 255;
-int off_colour = 30;
-int back_colour = 0;
-
-void setup() {
-  size(360, 210);
-  smooth();
-  noStroke();
-}
-
-void draw() {
-  background(back_colour);
-  int hours = int(binary(hour()));
-  int mins = int(binary(minute()));
-  int secs = int(binary(second()));
-
-  String  bin_time_str = nf(hours,6)+nf(mins,6)+nf(secs,6);
-
-  int i=0;
-  for(int row=0; row<3; row++){
-    for(int col=0; col<6; col++){
-      if (bin_time_str.charAt(i) == '1') {
-        fill(on_colour);
-      } else {
-        fill(off_colour);
-      }
-      ellipse(55+50*col,55+50*row,50,50);
-      i++;
-    }
-   }
-}
-```
-
+ [Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/binary_clock.pde)
 
 ---
+
+### Many Clocks
+A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
+
+![Many clocks](images/screenshot_manyclocks.png)
+[SourceCode](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/many_random.pde)
+
+---
+### Circular Clock
+By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
+![Many clocks](images/screenshot_circular.png)
+[SourceCode](https://github.com/LukeStorry/code-a-clock/blob/master/images/screenshot_circular.png)
