@@ -178,6 +178,64 @@ done?
 
 Here are more clock examples to hack and play around with below!
 
+---
+
+## Group work: invent your own clock
+
+#### Team up! Group with your neighbours into teams of four people.
+
+
+**Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own.
+At the end each group will have a minute to present their new clock idea!**
+
+Time to get creative!
+
+
+Here's some ideas as starting points!
+* Play with colour - can you tell the time just by colour?   http://www.pantoneclock.com
+* Think about shape.
+* Is your new clock simple to read or fiendishly complex?
+* Think about scale. Is your clock good for looking at seconds or does it work over years?
+* Can you make a stopwatch?
+* Smooth seconds using millis() and adjusting map()
+* http://www.jacopocolo.com/hexclock/ using time as RGB values, multipliers for stronger colours
+
+
+
+
+
+
+
+---
+
+## Show and Tell
+#### Time to show off your new creations!
+Can the other groups read the time on your new clock?
+Would they want a version on their wall at home?
+Did you use any interesting hacks in your code that you can explain to the other groups?
+
+
+
+
+
+
+
+
+
+---
+
+LINKS:
+This worksheet is here:
+* original - https://tinyurl.com/y9cuqury
+* new - https://lukestorry.co.uk/code-a-clock/
+
+Processing reference: https://processing.org/reference/
+
+---
+---
+
+Example Clocks
+
 ### Simple Text Clock
 This clock is a simple text-only clock
 ```java
@@ -293,55 +351,3 @@ void draw() {
 
 
 ---
----
-
-## Group work: invent your own clock
-
-#### Team up! Group with your neighbours into teams of four people.
-
-
-**Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own.
-At the end each group will have a minute to present their new clock idea!**
-
-Time to get creative!
-
-
-Here's some ideas as starting points!
-* Play with colour - can you tell the time just by colour?   http://www.pantoneclock.com
-* Think about shape.
-* Is your new clock simple to read or fiendishly complex?
-* Think about scale. Is your clock good for looking at seconds or does it work over years?
-* Can you make a stopwatch?
-* Smooth seconds using millis() and adjusting map()
-* http://www.jacopocolo.com/hexclock/ using time as RGB values, multipliers for stronger colours
-
-
-
-
-
-
-
----
-
-## Show and Tell
-#### Time to show off your new creations!
-Can the other groups read the time on your new clock?
-Would they want a version on their wall at home?
-Did you use any interesting hacks in your code that you can explain to the other groups?
-
-
-
-
-
-
-
-
-
----
-
-LINKS:
-This worksheet is here:
-* original - https://tinyurl.com/y9cuqury
-* new - https://lukestorry.co.uk/code-a-clock/
-
-Processing reference: https://processing.org/reference/
