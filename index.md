@@ -39,33 +39,53 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 >If you have any questions at any point, please ask a teaching assistant for help!
 
-
- starting point for the sketch                end result
-
-
-Objective
-Hint
-
-Step 1: Create the start of your program as shown above, using size() to define the dimensions of the screen and background() to define the colour.
-
-Now run the program with the play button and check it works.
+![penup-pendown screenshot](images/screenshot_penupdown.png)penup-pendown screenshot
 
 
 
+#### Step 1:
+Create the start of your program, using size() to define the dimensions of the screen and background() to define the colour.
 
-(If you are an experienced programmer, you can declare and define variables instead of hard-coding numbers.)
-The setup() function is run once, when the program starts and contains the main processing program:
+![skeleton code screenshot](images/skeleton.png)
+
+Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works.
+
+
+
+
+<details>
+<summary>More Info</summary>
+
+The `setup()` function is run once, when the program starts, and sets up the window and the main processing program:
+
+```java
 void setup( ){
 // Main code
 }
+```
 
-The size function defines the dimensions of the screen: size(height, width)
-size(500, 500);
+The `size()` function defines the dimensions of the screen:
+```java
+      size(height, width);
+      size(500, 500);
+```
 
-The background function controls the colour of the screen:
-background(red, green, blue)
-background(100, 120, 90);
-Step 2: If you have successfully created a screen in your setup() function, now create a draw loop with draw().
+The `background()` function controls the colour of the screen:
+
+```java
+      background(red, green, blue)
+      background(100, 120, 90);
+```
+
+_If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
+
+
+The `draw()` function is repeatedly called whilst your sketch is running, this is where we'll put the fun stuff later.
+
+</details>
+
+#### Step 2:
+If you have successfully created a screen in your setup() function, now create a draw loop with draw().
 
 The objective is to try and create a shape on the screen with your mouse.
 
