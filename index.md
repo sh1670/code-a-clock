@@ -1,9 +1,10 @@
 ---
 title: Code A Clock Workshop
 ---
-
-
+![swirly clock](images/swirly.jpg)
+![flippy clock](images/flipclock.png)
 ## Workshop Objective: Reinvent the Clock
+
 #### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
 Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
 
@@ -13,6 +14,8 @@ However, do feel free to let your creativity run wild... feel free to go 'off pi
 
 ## What is Processing?
 #### In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.
+
+![Processing Logo](images/processing_logo.png)
 
 _If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. _
 
