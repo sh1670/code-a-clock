@@ -1,3 +1,8 @@
+---
+layout: page
+title: Code A Clock Workshop
+---
+
 
 ## Workshop Objective: Reinvent the Clock
 #### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
