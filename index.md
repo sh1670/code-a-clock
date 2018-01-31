@@ -36,7 +36,11 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 - 14:35 Playing with time
 - 14:50 Group Work
 - 15:10 Presentations
+
+
 ---
+---
+
 
 ## PenUp, PenDown
 
@@ -111,7 +115,7 @@ if (mousePressed) {
 
 ### Step 4:
 Your program should now effectively be a pen up and pen down program now.
-However, a pen that doesn't move is useless.
+However, a pen that doesn''t move is useless.
 
 >To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
 
@@ -139,66 +143,7 @@ First create a new Processing sketch (File -> New)
 
 Then copy and paste in the code below:
 
-
-int clockCentreX, clockCentreY;
-float secondsRadius;
-float minutesRadius;
-float hoursRadius;
-float clockDiameter;
-
-void setup() {
-
-  size(400, 400);
-
-  clockCentreX = width / 2;
-  clockCentreY = height / 2;
-
-  int maxRadius = min(width, height) / 2;
-
-  secondsRadius = maxRadius * 0.72;
-  minutesRadius = maxRadius * 0.60;
-  hoursRadius = maxRadius * 0.50;
-  clockDiameter = maxRadius * 1.8;
-}
-
-
-void draw() {
-
-  // first clear the canvas by drawing the background
-  background(100, 100, 100);
-
-  // now draw the clock face
-  fill(150, 150, 150);
-  noStroke();
-  ellipse(clockCentreX, clockCentreY, clockDiameter, clockDiameter);
-
-  // calculate the current hand angles
-  float second_angle = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
-  float minute_angle = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
-  float hour_angle = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
-
-  // set the colour to draw the details
-  stroke(255, 255, 255);
-  strokeWeight(1);
-  line(clockCentreX, clockCentreY, clockCentreX + cos(second_angle) * secondsRadius, clockCentreY + sin(second_angle) * secondsRadius);
-  // minute hand
-  strokeWeight(3);
-  line(clockCentreX, clockCentreY, clockCentreX + cos(minute_angle) * minutesRadius, clockCentreY + sin(minute_angle) * minutesRadius);
-  // hour hand
-  strokeWeight(6);
-  line(clockCentreX, clockCentreY, clockCentreX + cos(hour_angle) * hoursRadius, clockCentreY + sin(hour_angle) * hoursRadius);
-
-  strokeWeight(2);
-  beginShape(POINTS);
-  for (int degrees = 0; degrees < 360; degrees+=6) {
-    float rads = radians(degrees);
-    float tick_mark_x = clockCentreX + cos(rads) * secondsRadius;
-    float tick_mark_y = clockCentreY + sin(rads) * secondsRadius;
-    vertex(tick_mark_x, tick_mark_y);
-  }
-  endShape();
-}
-
+{% include_relative example_code/simple_clock.pde %}
 
 
 
