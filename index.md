@@ -15,7 +15,19 @@ title: Code A Clock Workshop
 
 However, do feel free to let your creativity run wild... feel free to go 'off piste' and go beyond the challenges we've laid out here. Who knows, you might just reinvent the concept of time! 😜
 
+
+
+
+
+
+<br><br>
 ---
+<br><br>
+
+
+
+
+
 
 ## What is Processing?
 #### In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.
@@ -45,11 +57,9 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 - 15:10 Presentations
 
 
+<br><br><br><br>
 ---
----
-
-
-
+<br><br><br><br>
 
 
 # Intro to Processing - Drawing Program
@@ -131,11 +141,11 @@ Here are a few extensions you could try:
 - Change the size of the ellipse with every mouse click.
 
 
-
-
+<br><br><br><br>
 
 ---
 
+<br><br><br><br>
 
 # Clock Program Challenges - Playing with Time
 #### In this exercise you will be creatively modifying the code for a program that draws a working clock.
@@ -198,7 +208,7 @@ void draw() {
   endShape();
 }
 ```
-[Sourcecode](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/simple_clock.pde)
+[Sourcecode on Github](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/simple_clock.pde)
 
 
 Now press the play button and it you should have a clock that looks like this:
@@ -208,8 +218,13 @@ Now press the play button and it you should have a clock that looks like this:
 ---
 
 
-Great - now try hacking the clock by trying some of the challenges below, feel free to pick and choose, no need to do them in order. Also, it's no problem to go beyond the challenges and try just generally playing around with the code.
-Once you've tried this version, try the other two example clocks below.
+Great - now try figuring out how it all works, then hacking the clock by trying some of the challenges below.
+
+Feel free to pick and choose, no need to do them in order.
+
+Also, it's no problem to go beyond the challenges and try just generally playing around with the code.
+
+Once you've tried this version, maybe try some of the challenges on some of the other example clocks at the bottom.
 
 >If you need any help, please ask a teaching assistant!
 
@@ -240,18 +255,26 @@ How about also swapping between time zones with a click of the mouse?
 
 
 
+
+
+
+
+<br><br><br><br>
 ---
+<br><br><br><br>
 
 
-done?
 
-Here are more clock examples to hack and play around with below!
 
----
+
+
+
+
+
 
 # Group work: Design Your Own Clock
 
-#### Team up! Group with your neighbours into teams of four people.
+### Team up! Group with your neighbours into teams of four people.
 
 
 **Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own.
@@ -295,24 +318,36 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 ## LINKS:
 
-This worksheet is here:
+This worksheet is available from these links:
 * original - https://tinyurl.com/y9cuqury
 * new - https://lukestorry.co.uk/code-a-clock/
 
 Processing reference: https://processing.org/reference/
 
----
 
----
 
+
+
+
+
+
+<br><br><br><br>
 ---
+<br><br><br><br>
+
+
+
+
+
+
+
+
 
 # Example Clocks
 
----
 
 ### Simple Text Clock
-This clock is a simple text-only clock
+This is a vary simple text-only clock
 ```java
 void setup() {
   size(170, 40);
@@ -338,7 +373,9 @@ void draw() {
 This clock lays the hours, minutes and seconds out in a table and highlights the current time.
 
 How about playing around by removing all the lines, or creating a different shade for each block?
+
 ![Linear Clock](images/screenshot_linear.png)
+
 [Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/linear_clock.pde)
 
 ---
@@ -359,10 +396,14 @@ Can you tell why?
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
 ![Many clocks](images/screenshot_manyclocks.png)
-[SourceCode](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/many_random.pde)
+
+[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/many_random.pde)
 
 ---
+
 ### Circular Clock
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
+
 ![Many clocks](images/screenshot_circular.png)
-[SourceCode](https://github.com/LukeStorry/code-a-clock/blob/master/images/screenshot_circular.png)
+
+[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/images/screenshot_circular.png)
