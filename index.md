@@ -6,7 +6,7 @@ title: Code A Clock Workshop
 ![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
 :---:|:---:|:--:
 
-## Workshop Objective: Reinvent the Clock
+# Workshop Objective: Reinvent the Clock
 
 #### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
 
@@ -48,7 +48,7 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 
 
 ---
-### Timings
+## Timings
 This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
 - 14:15 Intro
 - 14:20 Intro to Processing - Drawing Program
@@ -62,16 +62,16 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 <br><br><br><br>
 
 
-# Intro to Processing - Drawing Program
+# Pen Up, Pen Down 
 
-#### First off we are going to create a simple drawing program.
+#### First off we are going to introduce you to Processing by creating a simple drawing program.
 
 >If you have any questions at any point, please ask a teaching assistant for help!
 
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
-### Step 1:
+## Step 1:
 Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
@@ -90,7 +90,7 @@ Set up the minimum program by putting numbers into the code in the above screens
 _If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
 
 ---
-### Step 2:
+## Step 2:
 If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
 This function is repeatedly called whilst your sketch is running.
 
@@ -103,7 +103,7 @@ _The objective is to try and create a shape on the screen with your mouse._
 
 
 ---
-### Step 3:
+## Step 3:
 Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
 To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
@@ -124,7 +124,7 @@ if (mousePressed) {
 }
 ```
 
-### Step 4:
+## Step 4:
 Your program should now effectively be a pen up and pen down program now.
 However, a pen that doesn''t move is useless.
 
@@ -147,7 +147,7 @@ Here are a few extensions you could try:
 
 <br><br><br><br>
 
-# Clock Program Challenges - Playing with Time
+# Playing with Time
 #### In this exercise you will be creatively modifying the code for a program that draws a working clock.
 
 First create a new Processing sketch (File -> New)
@@ -228,6 +228,7 @@ Once you've tried this version, maybe try some of the challenges on some of the 
 
 >If you need any help, please ask a teaching assistant!
 
+## Challenges
 
 #### Challenge 1:
 Can you make the appearance of this clock nicer by changing its background color, the color and length of its hands, and the number of points of the color, for example?
@@ -314,23 +315,6 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 
 
----
-
-## LINKS:
-
-This worksheet is available from these links:
-* original - https://tinyurl.com/y9cuqury
-* new - https://lukestorry.co.uk/code-a-clock/
-
-Processing reference: https://processing.org/reference/
-
-
-
-
-
-
-
-
 <br><br><br><br>
 ---
 <br><br><br><br>
@@ -346,7 +330,7 @@ Processing reference: https://processing.org/reference/
 # Example Clocks
 
 
-### Simple Text Clock
+## Simple Text Clock
 This is a vary simple text-only clock
 ```java
 void setup() {
@@ -369,7 +353,7 @@ void draw() {
 
 ---
 
-### Linear Clock
+## Linear Clock
 This clock lays the hours, minutes and seconds out in a table and highlights the current time.
 
 How about playing around by removing all the lines, or creating a different shade for each block?
@@ -380,7 +364,7 @@ How about playing around by removing all the lines, or creating a different shad
 
 ---
 
-### Binary Clock
+## Binary Clock
 This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.
 
 ![Binary Clock](images/screenshot_binary.png)
@@ -392,7 +376,7 @@ Can you tell why?
 
 ---
 
-### Many Clocks
+## Many Clocks
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
 ![Many clocks](images/screenshot_manyclocks.png)
@@ -401,7 +385,7 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 ---
 
-### Circular Clock
+## Circular Clock
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
 
 ![Many clocks](images/screenshot_circular.png)
