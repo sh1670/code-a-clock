@@ -2,9 +2,14 @@
 title: Code A Clock Workshop
 ---
 
+<table style="width:100%">
+  <tr>
+    <td><img src="images/swirly.jpg" alt="swirly clock"></td>
+    <td><img src="images/flipclock.png" alt="flippy clock"></td> 
+    <td><img src="images/textclock.jpg" alt="text clock"></td>
+  </tr>
+</table>
 
-![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
-:---:|:---:|:--:
 
 # Workshop Objective: Reinvent the Clock
 
