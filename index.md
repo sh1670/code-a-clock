@@ -76,7 +76,7 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
-## Step 1:
+### Step 1:
 Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
@@ -95,7 +95,7 @@ Set up the minimum program by putting numbers into the code in the above screens
 _If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
 
 ---
-## Step 2:
+### Step 2:
 If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
 This function is repeatedly called whilst your sketch is running.
 
@@ -108,7 +108,7 @@ _The objective is to try and create a shape on the screen with your mouse._
 
 
 ---
-## Step 3:
+### Step 3:
 Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
 To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
@@ -129,7 +129,7 @@ if (mousePressed) {
 }
 ```
 
-## Step 4:
+### Step 4:
 Your program should now effectively be a pen up and pen down program now.
 However, a pen that doesn''t move is useless.
 
@@ -233,6 +233,9 @@ Once you've tried this version, maybe try some of the challenges on some of the 
 
 >If you need any help, please ask a teaching assistant!
 
+
+
+
 ## Challenges
 
 #### Challenge 1:
@@ -278,7 +281,7 @@ How about also swapping between time zones with a click of the mouse?
 
 
 
-# Group work: Design Your Own Clock
+# Design Your Own Clock
 
 ### Team up! Group with your neighbours into teams of four people.
 
