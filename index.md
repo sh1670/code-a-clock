@@ -76,57 +76,71 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 #### First off we are going to introduce you to Processing by creating a simple drawing program.
 
->If you have any questions at any point, please ask a teaching assistant for help!
+>_**If you have any questions at any point, please ask a teaching assistant for help!**_
 
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
 ## Step 1:
-Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
+Write a basic program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
+
+Here is a screenshot to sho how it should be laid out, type it yourself then run the program with the play button to check it works.
 
 ![skeleton code screenshot](images/skeleton.png)
 
-Set up the minimum program by putting numbers into the code in the above screenshot, then run the program with the play button to check it works.
 
-
->The `setup()` function is run once, when the program starts, and sets up the window and the main processing program
+>**Explaination:**
 >
-> The `size()` function defines the dimensions of the screen:
-`size(height, width);`, `size(500, 500);`.
+>The `void setup( ){     }` function is run once, when the program starts, and sets up the window and the main processing program
 
->The `background()` function controls the colour of the screen: `background(red, green, blue);`, `background(100, 120, 90);`.
+> The `size(,)` function defines the dimensions of the screen:\
+>`size(height, width);`\
+>`size(500, 500);`.
+
+>The `background(,,)` function controls the colour of the screen:\
+>`background(red, green, blue);`\
+>`background(100, 120, 90);
 
 
-_If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
+_If you are an experienced programmer, you can try declaring and define variables/consts instead of hard-coding numbers._
 
 ---
 ## Step 2:
-If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
-This function is repeatedly called whilst your sketch is running.
+If you have successfully created a screen in your `setup()` function, now define a second function `draw()`, as shown in the screenshot above.\
+_This function is repeatedly called whilst your sketch is running, by default looping 60 times a second_
 
-_The objective is to try and create a shape on the screen with your mouse._
+**The objective is to try and create a shape on the screen with your mouse.**
 
->The `fill` function can be used to control the colour of shapes: `fill(red, green, blue)`, `fill(200, 200, 200);`.
+>The `fill` function can be used to control the colour of shapes:\
+>`fill(red, green, blue)`\
+>`fill(200, 200, 200);`
 
->The `ellipse()` function draws an ellipse at a given location, with given width and height:
-`ellipse(centre_x, centre_y, width, height);`, `ellipse(250, 250, 100, 50);`.
+>The `ellipse()` function draws an ellipse at a given location, with given width and height:\
+>`ellipse(centre_x, centre_y, width, height);`\
+>`ellipse(250, 250, 100, 50);`
 
 
 ---
 ## Step 3:
-Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
+Your program should now draw an ellipse on a blank screen.\
+Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
-To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
+>__To do this you’ll need to use an `if` statement:__\
+>“if mouse is clicked draw an ellipse, else do nothing”.
 
->If statements allow you to write some code which is only executed if some test condition is true:
-
-```java
+>`if` statements allow you to write some code which is only executed if some test condition is true:
+>
+>```java
 if (test) {
-  // statements
+  // optional statements
 }
 ```
 
-The `mousePressed` variable is `true` when any mouse button is pressed. It is `false` otherwise.
+
+
+The `mousePressed` variable is `true` when any mouse button is pressed.\
+It is `false` otherwise.
+
 
 ```java
 if (mousePressed) {
@@ -135,12 +149,12 @@ if (mousePressed) {
 ```
 
 ## Step 4:
-Your program should now effectively be a pen up and pen down program now.
+Your program should now effectively be a pen up and pen down program.\
 However, a pen that doesn''t move is useless.
 
->To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
+To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
 
-
+<br>
 
 ### Congratulations.
 You should now have a simple painting program in Processing.
