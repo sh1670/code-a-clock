@@ -37,13 +37,13 @@ However, do feel free to let your creativity run wild... feel free to go 'off pi
 ## What is Processing?
 #### In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.
 
-![Processing Logo](images/processing_logo.png)
+<center> ![Processing Logo](images/processing_logo.png) </center>
 
-_If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. _
+> If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. 
 
 
-Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. There are both Javascript and Java variants, but today we'll be using the Java.
-
+Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code.
+There are both Javascript and Java variants, but today we'll be using the Java.
 
 The Processing programming environment might seem familiar to those of you who have used an Integrated Development Environment _(IDE)_ before, however experience with IDE’s is not a prerequisite for this workshop, so do not worry if some of this looks unfamiliar at first!
 
@@ -52,7 +52,12 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 
 
 
+<br>
 ---
+<br>
+
+
+
 ## Timings
 This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
 - 14:15 Intro
@@ -76,7 +81,7 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
-### Step 1:
+## Step 1:
 Create the start of your program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 ![skeleton code screenshot](images/skeleton.png)
@@ -95,7 +100,7 @@ Set up the minimum program by putting numbers into the code in the above screens
 _If you are an experienced programmer, you can declare and define variables/consts instead of hard-coding numbers._
 
 ---
-### Step 2:
+## Step 2:
 If you have successfully created a screen in your `setup()` function, now create a draw loop with `draw()`.
 This function is repeatedly called whilst your sketch is running.
 
@@ -108,7 +113,7 @@ _The objective is to try and create a shape on the screen with your mouse._
 
 
 ---
-### Step 3:
+## Step 3:
 Your program should now draw an ellipse on a blank screen. Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
 
 To do this you’ll need to use an `if` statement: “if mouse is clicked draw an ellipse, else do nothing”.
@@ -129,7 +134,7 @@ if (mousePressed) {
 }
 ```
 
-### Step 4:
+## Step 4:
 Your program should now effectively be a pen up and pen down program now.
 However, a pen that doesn''t move is useless.
 
@@ -339,7 +344,7 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 
 ## Simple Text Clock
-This is a vary simple text-only clock
+This is a very simple text-only clock, a good starting point:
 ```java
 void setup() {
   size(170, 40);
@@ -368,7 +373,7 @@ How about playing around by removing all the lines, or creating a different shad
 
 ![Linear Clock](images/screenshot_linear.png)
 
-[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/linear_clock.pde)
+[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/linear_clock.pde)
 
 ---
 
@@ -377,10 +382,10 @@ This clock lays the hours, minutes and seconds out in binary. The first line is 
 
 ![Binary Clock](images/screenshot_binary.png)
 
-The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39?
+The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39
 Can you tell why?
 
- [Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/binary_clock.pde)
+ [Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/binary_clock.pde)
 
 ---
 
@@ -389,13 +394,13 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 ![Many clocks](images/screenshot_manyclocks.png)
 
-[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/example_code/many_random.pde)
+[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/many_random.pde)
 
 ---
 
-## Circular Clock
+## Arc Clock
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
 
 ![Many clocks](images/screenshot_circular.png)
 
-[Sourcecode on GitHub](https://github.com/LukeStorry/code-a-clock/blob/master/images/screenshot_circular.png)
+[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/arc.pde)
