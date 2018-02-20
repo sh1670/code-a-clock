@@ -142,7 +142,7 @@ if (mousePressed) {
 }
 ```
 
-## Step 4:
+## Step 4
 **Moving the pen**
 Your program should now effectively be a pen up and pen down program.  
 However, a pen that doesn't move is useless.
@@ -151,7 +151,7 @@ To make it more realistic use the `mouseX` and `mouseY` variables to draw your e
 
 <br>
 
-### Congratulations.
+### Congratulations!
 You should now have a simple painting program in Processing.
 
 Here are a few extensions you could try:
