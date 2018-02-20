@@ -345,6 +345,15 @@ Prepare a quick presentation that answers some questions people might have about
 # Example Clocks
 Here are some examples of clocks, with their sourcecode, for both inspiration and as a starting point 
 
+### Simple Text Clock
+This is a good starting point for creating your own text-based clock:
+
+`15:10:39`
+
+[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/simple_text_clock.pde)
+
+---
+
 ### Linear Clock
 This clock lays the hours, minutes and seconds out in a table and highlights the current time.
 
@@ -368,27 +377,6 @@ Can you tell why?
 
 ---
  
-### Simple Text Clock
-This produces a very simple text-only clock, a good starting point for creating your own text-based clock:
-```java
-void setup() {
-  size(170, 40);
-}
-
-void draw() {
-  background(0);
-  String hour_string = Integer.toString(hour());
-  String minute_string = Integer.toString(minute());
-  String second_string = Integer.toString(second());
-  String  time_string = hour_string + ":" + minute_string + ":" + second_string;
-  textSize(32);
-  text(time_string,10,30);
-}
-```
-[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/simple_text_clock.pde)
-
----
-
 ### Many Clocks
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
