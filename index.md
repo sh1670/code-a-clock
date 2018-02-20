@@ -242,29 +242,27 @@ Once you've tried this version, maybe try some of the challenges on some of the 
 
 ## Challenges
 
-#### Challenge 1:
-**Can you make the appearance of this clock nicer?**
-For example. try changing its background color, the color and length of its hands, and the number of points of the color.
+### Challenge 1
+**Can you make the appearance of this clock nicer?**  
+For example, try changing its background color, the color and length of its hands, and the number of points of the color.
 
 *For more information on how colours work in Processing, check out this [Link about Colour in Processing](https://processing.org/tutorials/color/)*
 
 
-#### Challenge 2:
-**Can you make a clock with only hour and minute hands?**
-
+### Challenge 2
+**Can you make a clock with only hour and minute hands?**  
 Where is the line of code that draws the second hand?  
-*Rather than deleting it, you can comment it out using two forward slashes.*
+*Rather than deleting it, you can comment it out using two forward slashes:* `//comment`
 
 
-#### Challenge 3:
-**Can you give a snapshot of some fixed time such as 18:45pm?**
+### Challenge 3
+**Can you give a snapshot of some fixed time such as 18:45pm?**  
 *Find the minute_angle and hour_angle variables and manually edit them to show a certain time on the clock.*
 
-#### Challenge 4:
-**Can you give another time-zone clock**
+### Challenge 4
+**Can you give another time-zone clock**  
 e.g. Beijing time, New York time?  
-How about also swapping between time zones with a click of the mouse?
-
+How about also swapping between time zones with a click of the mouse?  
 *Find the change in minute_angle and hour_angle that correspond to the time-zone difference.*
 
 
@@ -345,7 +343,7 @@ Did you use any interesting hacks in your code that you can explain to the other
 
 
 ## Simple Text Clock
-This is a very simple text-only clock, a good starting point:
+This is a very simple text-only clock, a good starting point for creating your own clock:
 ```java
 void setup() {
   size(170, 40);
