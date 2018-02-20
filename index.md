@@ -52,9 +52,9 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 
 
 
-<br>
+
 ---
-<br>
+
 
 
 
@@ -93,12 +93,12 @@ Here is a screenshot to sho how it should be laid out, type it yourself then run
 >
 >The `void setup( ){     }` function is run once, when the program starts, and sets up the window and the main processing program
 
-> The `size(,)` function defines the dimensions of the screen:\
->`size(height, width);`\
+> The `size(,)` function defines the dimensions of the screen:  
+>`size(height, width);`  
 >`size(500, 500);`.
 
->The `background(,,)` function controls the colour of the screen:\
->`background(red, green, blue);`\
+>The `background(,,)` function controls the colour of the screen:  
+>`background(red, green, blue);`  
 >`background(100, 120, 90);
 
 
