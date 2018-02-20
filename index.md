@@ -424,8 +424,9 @@ If your clock is quirky/cool enough, it could be added to this gallery for futur
 
 
 ### Thanks!
-**We hop you enjoyed the workshop!**
-If you have any feedback, either tell the person leading workshop, or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
+**We hope you enjoyed the workshop!**  
+If you have any feedback, either tell the person leading workshop,  
+or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
 
 :)
 
