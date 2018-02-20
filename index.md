@@ -13,21 +13,21 @@ title: Code A Clock Workshop
 
 # Workshop Objective: Reinvent the Clock
 
-#### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
+#### The overall objective of this workshop is simple:
+>Have fun while learning some basic programming concepts, and create your own version form of measuring or displaying time.
+
+Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
+
+#### However, do feel free to let your creativity run wild...  
+feel free to go 'off piste' and go beyond the challenges we've laid out here.  
+Who knows, you might just reinvent the concept of time! 😜
 
 
->Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
-
-However, do feel free to let your creativity run wild... feel free to go 'off piste' and go beyond the challenges we've laid out here. Who knows, you might just reinvent the concept of time! 😜
 
 
+<br>
 
-
-
-
-<br><br>
----
-<br><br>
+<br>
 
 
 
@@ -37,17 +37,18 @@ However, do feel free to let your creativity run wild... feel free to go 'off pi
 ## What is Processing?
 #### In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.
 
-<center> ![Processing Logo](images/processing_logo.png) </center>
+ ![Processing Logo](images/processing_logo.png) 
 
-> If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. 
+> If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and will be set up on half of your screen.  
+>If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. 
 
 
-Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code.
+Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code.  
 There are both Javascript and Java variants, but today we'll be using the Java.
 
 The Processing programming environment might seem familiar to those of you who have used an Integrated Development Environment _(IDE)_ before, however experience with IDE’s is not a prerequisite for this workshop, so do not worry if some of this looks unfamiliar at first!
 
-Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.
+Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.  
 [Visit this link](https://processing.org/exhibition/) to see some of the examples of interesting prototypes and projects.
 
 
@@ -59,13 +60,16 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 
 
 ## Timings
-This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
+This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each section are below:
 - 14:15 Intro
 - 14:20 Intro to Processing - Drawing Program
 - 14:35 Clock Program Challenges - Playing with Time
 - 14:50 Group Work - Design a New Clock
 - 15:10 Presentations
 
+<br><br>
+
+>_**If you have any questions at any point, please ask a teaching assistant for help!**_
 
 <br><br><br><br>
 ---
@@ -76,26 +80,25 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 #### First off we are going to introduce you to Processing by creating a simple drawing program.
 
->_**If you have any questions at any point, please ask a teaching assistant for help!**_
 
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
 ## Step 1
-Write a basic program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
+Write some code to set up your sketch's window, using `size()` to define the dimensions of the screen and `background()` to define the colour, within a `setup()` function.
 
-Here is a screenshot to sho how it should be laid out, type it yourself then run the program with the play button to check it works.
+Here is a screenshot to show how it should be laid out, type it out and then run the program with the play button to check it works.
 
 ![skeleton code screenshot](images/skeleton.png)
 
 
 The `void setup() {     }` function is run once, when the program starts, and sets up the window and the main processing program
 
-The `size(height, width)` function defines the dimensions of the screen:
->`size(600, 800);`.
+The `size(height, width)` function defines the dimensions of the screen:  
+`size(600, 800);`.
 
 The `background(red, green, blue)` function controls the colour of the screen:  
->`background(66, 171, 205);
+`background(66, 171, 205);`
 
 
 _If you are an experienced programmer, you can try declaring and define variables/consts instead of hard-coding numbers._
@@ -105,37 +108,30 @@ _If you are an experienced programmer, you can try declaring and define variable
 If you have successfully created a screen in your `setup()` function, now define a second function `draw()`, as shown in the screenshot above.  
 _This function is repeatedly called whilst your sketch is running, by default looping 60 times a second_
 
-**The objective is to try and create a shape on the screen with your mouse.**
+**The next objective is to try and create a shape on the screen with your mouse.**
 
->The `fill(red, green, blue)` function can be used to control the colour of shapes:  
->`fill(205,66,171);`
+The `fill(red, green, blue)` function can be used to control the colour of shapes:  
+`fill(205,66,171);`
 
->The `ellipse(x, y, width, height);` function draws an ellipse with its centre at the given location, with given width and height:
->`ellipse(250, 200, 100, 50);`
+The `ellipse(x, y, width, height);` function draws an ellipse with its centre at the given location, with given width and height:  
+`ellipse(250, 200, 100, 50);`
 
 
 ---
 ## Step 3
-Your program should now draw an ellipse on the screen.\
+Your program should now draw an ellipse on the screen.  
 Next we will change it so that an ellipse is only drawn if you click your mouse.
 
-
-`if` statements allow you to write some code which is only executed if some test condition is true:
-
->```java
-if (test) {
-  // optional statements
-}
+`if` statements allow you to write some code which is only executed if some test condition is true:  
+```java
+if (test) { // optional statements }
 ```
 
+The `mousePressed` variable is `true` when any mouse button is pressed, and `false` otherwise, so let's use that in our `if` statement:
 
-
-The `mousePressed` variable is `true` when any mouse button is pressed.  
-It is `false` otherwise.
-
->```java
+```java
 if (mousePressed) {
- // code to draw an ellipse
+    // code to draw an ellipse
 }
 ```
 
@@ -176,15 +172,14 @@ float hoursRadius;
 float clockDiameter;
 
 void setup() {
-
-size(400, 400);
-clockCentreX = width / 2;
-clockCentreY = height / 2;
-int maxRadius = min(width, height) / 2;
-secondsRadius = maxRadius * 0.72;
-minutesRadius = maxRadius * 0.60;
-hoursRadius = maxRadius * 0.50;
-clockDiameter = maxRadius * 1.8;
+    size(400, 400);
+    clockCentreX = width / 2;
+    clockCentreY = height / 2;
+    int maxRadius = min(width, height) / 2;
+    secondsRadius = maxRadius * 0.72;
+    minutesRadius = maxRadius * 0.60;
+    hoursRadius = maxRadius * 0.50;
+    clockDiameter = maxRadius * 1.8;
 }
 
 void draw() {
@@ -233,15 +228,14 @@ Now press the play button and it you should have a clock that looks like this:
 ---
 
 
-Great - now try figuring out how it all works, then hacking the clock by trying some of the challenges below.
+**Great - now try figuring out how it all works, then hacking the clock by trying some of the challenges below.** 
 
-Feel free to pick and choose, no need to do them in order.
-
-Also, it's no problem to go beyond the challenges and try just generally playing around with the code.
+Feel free to pick and choose, no need to do them in order.  
+Also, it's no problem to go beyond the challenges and try just generally playing around with the code.  
 
 Once you've tried this version, maybe try some of the challenges on some of the other example clocks at the bottom.
 
->If you need any help, please ask a teaching assistant!
+>If you need any help, just raise your hand and a teaching assistant will come over! :)
 
 
 
@@ -249,27 +243,29 @@ Once you've tried this version, maybe try some of the challenges on some of the 
 ## Challenges
 
 #### Challenge 1:
-Can you make the appearance of this clock nicer by changing its background color, the color and length of its hands, and the number of points of the color, for example?
+**Can you make the appearance of this clock nicer?**
+For example. try changing its background color, the color and length of its hands, and the number of points of the color.
 
->Colours are given in (Red, Green and Blue) values, 0 means none of that colour and 255 means full.
-To make purple you mix red and blue, so try (255, 0, 255).
+*For more information on how colours work in Processing, check out this [Link about Colour in Processing](https://processing.org/tutorials/color/)*
 
 
 #### Challenge 2:
-Can you make a clock with only hour and minute hands?
->Where is the line of code that draws the second hand?
-Rather than deleting it, you can comment it out using two forward slashes.
+**Can you make a clock with only hour and minute hands?**
+
+Where is the line of code that draws the second hand?  
+*Rather than deleting it, you can comment it out using two forward slashes.*
 
 
 #### Challenge 3:
-Can you give a snapshot of some fixed time such as 18:45pm?
->Try setting the minute_angle and hour_angle by hand in order to show a certain time on the clock.
+**Can you give a snapshot of some fixed time such as 18:45pm?**
+*Find the minute_angle and hour_angle variables and manually edit them to show a certain time on the clock.*
 
 #### Challenge 4:
-Can you give another time-zone clock e.g. Beijing time, New York time?
+**Can you give another time-zone clock**
+e.g. Beijing time, New York time?  
 How about also swapping between time zones with a click of the mouse?
 
->Find the change in minute_angle and hour_angle that correspond to the time-zone difference.
+*Find the change in minute_angle and hour_angle that correspond to the time-zone difference.*
 
 
 
@@ -299,7 +295,7 @@ How about also swapping between time zones with a click of the mouse?
 **Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own.
 At the end each group will have a minute to present their new clock idea!**
 
-Time to get creative!
+>*Time to get creative!*
 
 
 Here's some ideas as starting points!
