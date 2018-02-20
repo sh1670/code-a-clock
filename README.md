@@ -13,14 +13,13 @@ Have fun while learning some basic programming concepts, and create a custom for
 
 ---
 
-## What is Processing?
 #### In this activity we use [Processing](https://processing.org), a Java based flexible software sketchbook.
 
 ![Processing Logo](images/processing_logo.png)
 
 > Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. 
 
-Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.
+Students, artists, designers, researchers, and hobbyists use Processing for learning and prototyping projects.  
 [Visit this link](https://processing.org/exhibition/) to see some of the examples of interesting prototypes and projects.
 
 
