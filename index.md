@@ -81,7 +81,7 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 ![penup-pendown screenshot](images/screenshot_penupdown.png)
 
 ---
-## Step 1:
+## Step 1
 Write a basic program, using `size()` to define the dimensions of the screen and `background()` to define the colour, within the `setup()` function.
 
 Here is a screenshot to sho how it should be laid out, type it yourself then run the program with the play button to check it works.
@@ -89,47 +89,39 @@ Here is a screenshot to sho how it should be laid out, type it yourself then run
 ![skeleton code screenshot](images/skeleton.png)
 
 
->**Explaination:**
->
->The `void setup( ){     }` function is run once, when the program starts, and sets up the window and the main processing program
+The `void setup() {     }` function is run once, when the program starts, and sets up the window and the main processing program
 
-> The `size(,)` function defines the dimensions of the screen:  
->`size(height, width);`  
->`size(500, 500);`.
+The `size(height, width)` function defines the dimensions of the screen:
+>`size(600, 800);`.
 
->The `background(,,)` function controls the colour of the screen:  
->`background(red, green, blue);`  
->`background(100, 120, 90);
+The `background(red, green, blue)` function controls the colour of the screen:  
+>`background(66, 171, 205);
 
 
 _If you are an experienced programmer, you can try declaring and define variables/consts instead of hard-coding numbers._
 
 ---
-## Step 2:
-If you have successfully created a screen in your `setup()` function, now define a second function `draw()`, as shown in the screenshot above.\
+## Step 2
+If you have successfully created a screen in your `setup()` function, now define a second function `draw()`, as shown in the screenshot above.  
 _This function is repeatedly called whilst your sketch is running, by default looping 60 times a second_
 
 **The objective is to try and create a shape on the screen with your mouse.**
 
->The `fill` function can be used to control the colour of shapes:\
->`fill(red, green, blue)`\
->`fill(200, 200, 200);`
+>The `fill(red, green, blue)` function can be used to control the colour of shapes:  
+>`fill(205,66,171);`
 
->The `ellipse()` function draws an ellipse at a given location, with given width and height:\
->`ellipse(centre_x, centre_y, width, height);`\
->`ellipse(250, 250, 100, 50);`
+>The `ellipse(x, y, width, height);` function draws an ellipse with its centre at the given location, with given width and height:
+>`ellipse(250, 200, 100, 50);`
 
 
 ---
-## Step 3:
-Your program should now draw an ellipse on a blank screen.\
-Try refactoring/changing it so that an ellipse is only drawn if you click your mouse.
+## Step 3
+Your program should now draw an ellipse on the screen.\
+Next we will change it so that an ellipse is only drawn if you click your mouse.
 
->__To do this you’ll need to use an `if` statement:__\
->“if mouse is clicked draw an ellipse, else do nothing”.
 
->`if` statements allow you to write some code which is only executed if some test condition is true:
->
+`if` statements allow you to write some code which is only executed if some test condition is true:
+
 >```java
 if (test) {
   // optional statements
@@ -138,11 +130,10 @@ if (test) {
 
 
 
-The `mousePressed` variable is `true` when any mouse button is pressed.\
+The `mousePressed` variable is `true` when any mouse button is pressed.  
 It is `false` otherwise.
 
-
-```java
+>```java
 if (mousePressed) {
  // code to draw an ellipse
 }
