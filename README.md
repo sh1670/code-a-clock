@@ -3,22 +3,13 @@
 
 Workshop created for use as a demonstration lab session for UoB open days / applicant visit days.
 
+### [Live Website](https://lukestorry.co.uk/code-a-clock/)
 
-https://lukestorry.co.uk/code-a-clock/
-
----
-
-
-![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
-:---:|:---:|:--:
 
 ---
 
 ### Workshop Objective: Reinvent the Clock
-
-##### The overall objective of this workshop is simple: Have fun, while learning some basic programming concepts to create your own version of a clock or some other form of measuring time.
-
-However, do feel free to let your creativity run wild... feel free to go 'off piste' and go beyond the challenges we've laid out here. Who knows, you might just reinvent the concept of time! 😜
+Have fun while learning some basic programming concepts, and create a custom form of measuring or displaying time.
 
 ---
 
@@ -26,9 +17,6 @@ However, do feel free to let your creativity run wild... feel free to go 'off pi
 #### In this activity we use [Processing](https://processing.org), a Java based flexible software sketchbook.
 
 ![Processing Logo](images/processing_logo.png)
-
-_If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and set up on half of your screen. If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started. _
-
 
 > Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. 
 
@@ -50,4 +38,4 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 ---
 
-Adapted from Pete Bennet's- https://tinyurl.com/y9cuqury
+Adapted from Pete Bennett's- https://tinyurl.com/y9cuqury
