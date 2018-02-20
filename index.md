@@ -67,15 +67,14 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 - 14:50 Group Work - Design a New Clock
 - 15:10 Presentations
 
-<br>
 
 **If you have any questions at any point, please ask a teaching assistant for help!**
 
-<br><br>
+<br>
 
 ---
 
-<br><br><br><br>
+<br><br><br>
 
 
 # Pen Up, Pen Down 
@@ -119,6 +118,7 @@ The *ellipse(x, y, width, height)* function draws an ellipse with its centre at 
 
 
 ---
+
 ## Step 3
 *Mouse Click*
 Your program should now draw an ellipse on the screen.  
@@ -142,6 +142,8 @@ if (mousePressed) {
 }
 ```
 
+---
+
 ## Step 4
 **Moving the pen**
 Your program should now effectively be a pen up and pen down program.  
@@ -149,7 +151,7 @@ However, a pen that doesn't move is useless.
 
 To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
 
-<br>
+---
 
 ### Congratulations!
 You should now have a simple painting program in Processing.
@@ -160,11 +162,18 @@ Here are a few extensions you could try:
 - Change the size of the ellipse with every mouse click.
 
 
-<br><br><br><br>
+
+
+
+<br><br><br>
 
 ---
 
-<br><br><br><br>
+<br><br><br>
+
+
+
+
 
 # Playing with Time
 #### In this exercise you will be creatively modifying the code for a program that draws a working clock.
@@ -240,8 +249,7 @@ Once you've tried this version, maybe try some of the challenges on some of the 
 
 >If you need any help, just raise your hand and a teaching assistant will come over! :)
 
-
-
+---
 
 ## Challenges
 
@@ -273,9 +281,12 @@ How about also swapping between time zones with a click of the mouse?
 
 
 
-<br><br><br><br>
+<br><br><br>
+
 ---
-<br><br><br><br>
+
+<br><br><br>
+
 
 
 
@@ -315,6 +326,8 @@ Here's some ideas as starting points!
 
 <br>
 
+
+
 ## Presentations
 *Time to show off your new creations!*  
 Prepare a quick presentation that answers some questions people might have about your clock:
@@ -331,7 +344,9 @@ Prepare a quick presentation that answers some questions people might have about
 
 
 <br><br><br><br>
+
 ---
+
 <br><br><br><br>
 
 
@@ -346,9 +361,9 @@ Prepare a quick presentation that answers some questions people might have about
 Here are some examples of clocks, with their sourcecode, for both inspiration and as a starting point 
 
 ### Simple Text Clock
-This is a good starting point for creating your own text-based clock:
+This very basic code is a good starting point for creating your own text-based clock.
 
-`15:10:39`
+`16:43:26`
 
 [Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/simple_text_clock.pde)
 
@@ -395,5 +410,25 @@ By stacking multiple circles and arcs, this clock shows time as a circular loadi
 
 ---
 
-### Your Clock
-If your clock is quirky enough, with clean code, it could be added to this gallery for future workshops.
+### Your Clock!
+If your clock is quirky/cool enough, it could be added to this gallery for future workshops.
+
+[Submit your code here!](https://goo.gl/forms/sGz90psADcLvI8ge2)
+
+
+<br><br><br>
+
+---
+
+<br><br><br>
+
+
+### Thanks!
+**We hop you enjoyed the workshop!**
+If you have any feedback, either tell the person leading workshop, or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
+
+:)
+
+<br><br><br>
+
+
