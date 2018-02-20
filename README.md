@@ -26,7 +26,7 @@ Students, artists, designers, researchers, and hobbyists use Processing for lear
 
 ---
 ### Timings
-This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each secion are below:
+This workshop was created for Applicant Visit Days at the University of Bristol, and the rough timings for each section are below:
 - 14:15 Intro
 - 14:20 Intro to Processing - Drawing Program
 - 14:35 Clock Program Challenges - Playing with Time
