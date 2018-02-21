@@ -88,45 +88,51 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 ## Step 1
 **Setting up your sketch's window.**
 
-The *setup()* function is run once, when the program starts, and sets up the window and the main processing program
+The **setup()** function is run once, when the program starts, and sets up the window and the main processing program
+```java
+void setup() {
+    
+}
+```
 
-The *size()* function defines the dimensions of the screen:  
-`size(600, 800);`
 
-The *`background()`* function defines the background colour of the screen:  
+The **size(width, height)** function defines the dimensions of the screen:  
+`size(800, 600);`
+
+The **background(red, green, blue)** function defines the background colour of the screen:  
 `background(66, 171, 205);`
+To learn more about how colours work in Processing, [see here](https://processing.org/tutorials/color/).
 
 **Here is a screenshot to show how it fits together:**  
 Type it out and then run the program with the play button to check it works.  
 ![skeleton code screenshot](images/skeleton.png)
 
-_If you are an experienced programmer, you can try declaring and define variables/consts instead of hard-coding numbers._
+*If you are an experienced programmer, you can try declaring and defining variables/consts instead of hard-coding numbers.*
 
 ---
 ## Step 2
-**The draw loop** 
-
+**The draw loop**  
 If you have successfully created a screen in your `setup()` function, now define a second function `draw()` as shown in the screenshot above.  
 *This function is repeatedly called whilst your sketch is running, by default 60 times a second.*
 
 **The next objective is to try and create a shape on the screen with your mouse.**
 
-The *fill(red, green, blue)* function declares the colour of shapes drawn after it:  
+The **fill(red, green, blue)** function declares the colour of shapes to be drawn after it:  
 `fill(205,66,171);`
 
-The *ellipse(x, y, width, height)* function draws an ellipse with its centre at the given location, with given width and height:  
-`ellipse(250, 200, 100, 50);`
+The **ellipse(x, y, width, height)** function draws an ellipse with its centre at the given location, with given width and height:  
+`ellipse(250, 200, 100, 250);`
 
+There are loads of other shapes available too, take a look [here](https://processing.org/examples/shapeprimitives.html).
 
 ---
 
 ## Step 3
-**Mouse Click**
-
+**Mouse Click**  
 Your program should now draw an ellipse on the screen.  
 Next we will change it so that an ellipse is only drawn if you click your mouse.
 
-*if* statements allow you to write some code which is only executed if some test condition is true:  
+`if` statements allow you to write some code which is only executed if some test condition is true:  
 ```java
 if (test) {
     //optional statements
@@ -152,7 +158,7 @@ if (mousePressed) {
 Your program should now effectively be a pen up and pen down program.  
 However, a pen that doesn't move is useless.
 
-To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen.
+To make it more realistic use the `mouseX` and `mouseY` variables to draw your ellipse based on where you put your mouse on the screen, and maybe change the size of the pentip too.
 
 ---
 
@@ -270,12 +276,12 @@ Where is the line of code that draws the second hand?
 
 ### Challenge 3
 **Can you give a snapshot of some fixed time such as 18:45pm?**  
-*Find the minute_angle and hour_angle variables and manually edit them to show a certain time on the clock.*
+*Find the __minute_angle__ and __hour_angle__ variables and manually edit them to show a certain time on the clock.*
 
 ### Challenge 4
 **Can you give another time-zone clock e.g. Beijing time, New York time?**  
 How about also swapping between time zones with a click of the mouse?  
-*Find the change in minute_angle and hour_angle that correspond to the time-zone difference.*
+*Find the change in __minute_angle__ and __hour_angle__ that correspond to the time-zone difference.*
 
 
 
