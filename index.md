@@ -104,7 +104,8 @@ _If you are an experienced programmer, you can try declaring and define variable
 
 ---
 ## Step 2
-**The draw loop**  
+**The draw loop** 
+
 If you have successfully created a screen in your `setup()` function, now define a second function `draw()` as shown in the screenshot above.  
 *This function is repeatedly called whilst your sketch is running, by default 60 times a second.*
 
@@ -120,7 +121,8 @@ The *ellipse(x, y, width, height)* function draws an ellipse with its centre at 
 ---
 
 ## Step 3
-*Mouse Click*
+**Mouse Click**
+
 Your program should now draw an ellipse on the screen.  
 Next we will change it so that an ellipse is only drawn if you click your mouse.
 
@@ -146,6 +148,7 @@ if (mousePressed) {
 
 ## Step 4
 **Moving the pen**
+
 Your program should now effectively be a pen up and pen down program.  
 However, a pen that doesn't move is useless.
 
@@ -157,8 +160,8 @@ To make it more realistic use the `mouseX` and `mouseY` variables to draw your e
 You should now have a simple painting program in Processing.
 
 Here are a few extensions you could try:
-- Try using a different conditional statement. I.e. replace the if statement with either a for-loop, a while-loop or a do-while-loop
-- Change the colour with of the ellipse with every mouse click !
+- Try using a different conditional statement. i.e. replace the if statement with either a for-loop, a while-loop or a do-while-loop
+- Change the colour with of the ellipse with every mouse click!
 - Change the size of the ellipse with every mouse click.
 
 
@@ -176,10 +179,10 @@ Here are a few extensions you could try:
 
 
 # Playing with Time
-#### In this exercise you will be creatively modifying the code for a program that draws a working clock.
+**In this exercise you will be creatively modifying the code for a program that draws a working clock.**
 
 First create a new Processing sketch (File -> New)  
-Then copy and paste in this [code](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/simple_clock.pde):
+Then copy and paste in [this code](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/simple_clock.pde):
 ```java
 int clockCentreX, clockCentreY;
 float secondsRadius;
