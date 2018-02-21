@@ -97,10 +97,10 @@ void setup() {
 
 
 The **size(width, height)** function defines the dimensions of the screen:  
-`size(800, 600);`
+`    size(800, 600);`
 
 The **background(red, green, blue)** function defines the background colour of the screen:  
-`background(66, 171, 205);`
+`    background(66, 171, 205);`
 To learn more about how colours work in Processing, [see here](https://processing.org/tutorials/color/).
 
 **Here is a screenshot to show how it fits together:**  
@@ -118,10 +118,10 @@ If you have successfully created a screen in your `setup()` function, now define
 **The next objective is to try and create a shape on the screen with your mouse.**
 
 The **fill(red, green, blue)** function declares the colour of shapes to be drawn after it:  
-`fill(205,66,171);`
+`    fill(205,66,171);`
 
 The **ellipse(x, y, width, height)** function draws an ellipse with its centre at the given location, with given width and height:  
-`ellipse(250, 200, 100, 250);`
+`    ellipse(250, 200, 100, 250);`
 
 There are loads of other shapes available too, take a look [here](https://processing.org/examples/shapeprimitives.html).
 
