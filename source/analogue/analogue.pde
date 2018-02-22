@@ -16,30 +16,31 @@ void setup() {
 }
 
 void draw() {
-        int all_black = 0;
-        int all_grey = 80;
-        int all_white = 255;
-        background(all_black, all_black, all_black);
-        fill(all_grey, all_grey, all_grey);
-        noStroke();
-        ellipse(clockCentreX, clockCentreY, clockDiameter, clockDiameter);
+        // reset the sketch
+        background(0, 0, 0);
 
+        // calculate angles
         float second_angle = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
-        float minute_angle = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
+        float minute_angle = map(minute()+5 + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
         float hour_angle = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 
-        stroke(all_white, all_white, all_white);
-        // control the thickness of the hand
+        // draw clock face
+        noStroke();
+        fill(80);
+        ellipse(clockCentreX, clockCentreY, clockDiameter, clockDiameter);
+
+        stroke(255, 255, 255);
+        // draw second hand
         strokeWeight(1);
         line(clockCentreX, clockCentreY, clockCentreX + cos(second_angle) * secondsRadius, clockCentreY + sin(second_angle) * secondsRadius);
-        // minute hand
+        // draw minute hand
         strokeWeight(2);
         line(clockCentreX, clockCentreY, clockCentreX + cos(minute_angle) * minutesRadius, clockCentreY + sin(minute_angle) * minutesRadius);
-        // hour hand
+        //draw  hour hand
         strokeWeight(4);
         line(clockCentreX, clockCentreY, clockCentreX + cos(hour_angle) * hoursRadius, clockCentreY + sin(hour_angle) * hoursRadius);
 
-
+        // draw markings
         strokeWeight(2);
         beginShape(POINTS);
         for (int degrees = 0; degrees < 360; degrees+=6) {

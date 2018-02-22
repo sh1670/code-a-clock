@@ -24,7 +24,7 @@ void draw() {
                         } else {
                                 fill(off_colour);
                         }
-                        ellipse(55+50*col,55+50*row,50,50);
+                        ellipse(55+50*col, 55+50*row, 50, 50);
                         i++;
                 }
         }
