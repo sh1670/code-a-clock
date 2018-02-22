@@ -4,9 +4,9 @@ title: Code A Clock Workshop
 
 <table style="width:100%">
   <tr>
-    <td><img src="images/swirly.jpg" alt="swirly clock"></td>
-    <td><img src="images/flipclock.png" alt="flippy clock"></td>
-    <td><img src="images/textclock.jpg" alt="text clock"></td>
+    <td><img src="img/swirly.jpg" alt="swirly clock"></td>
+    <td><img src="img/flipclock.png" alt="flippy clock"></td>
+    <td><img src="img/textclock.jpg" alt="text clock"></td>
   </tr>
 </table>
 
@@ -70,7 +70,7 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 **First off we are going to introduce you to Processing by creating a simple drawing program.**
 
-![penup-pendown screenshot](examples\drawing\recording_drawing.gif)
+![penup-pendown screenshot](examples/drawing/recording_drawing.gif)
 
 --------------------------------------------------------------------------------
 
@@ -243,7 +243,7 @@ void draw() {
 [Sourcecode on Github](examples/analogue/analogue.pde)
 
 Now press the play button and it you should have a clock that looks like this:<br>
-![analogue clock screenshot](examples\analogue\screenshot_analogue.png)
+![analogue clock screenshot](examples/analogue/screenshot_analogue.png)
 
 --------------------------------------------------------------------------------
 
@@ -378,7 +378,7 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 ![Manyclocks gif](examples/manyclocks/recording_manyclocks.gif)
 
-[Sourcecode](examples/manyclocks.pde)
+[Sourcecode](examples/manyclocks/manyclocks.pde)
 
 --------------------------------------------------------------------------------
 
@@ -388,7 +388,7 @@ By stacking multiple circles and arcs, this clock shows time as a circular loadi
 
 ![Arc clock gif](examples/arc/recording_arc.gif)
 
-[Sourcecode](examples/arc.pde)
+[Sourcecode](examples/arc/arc.pde)
 
 --------------------------------------------------------------------------------
 
@@ -398,7 +398,7 @@ This clock gradually accelerates when clicked:
 
 ![Accelerating clock gif](examples/accelerating/recording_accelerating.gif)
 
-[Sourcecode](examples/accelerating.pde)
+[Sourcecode](examples/accelerating/accelerating.pde)
 
 ### Blinking Clock
 
@@ -406,7 +406,7 @@ Team "The Illuminati" created this slightly unnerving clock that blinks every se
 
 ![Arc clock gif](examples/blink/recording_blink.gif)
 
-[Sourcecode](examples/blink.pde)
+[Sourcecode](examples/blink/blink.pde)
 
 --------------------------------------------------------------------------------
 
