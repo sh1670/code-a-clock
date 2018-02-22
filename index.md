@@ -12,13 +12,13 @@ title: Code A Clock Workshop
 
 # Workshop Objective: Reinvent the Clock
 
-## The overall objective of this workshop is simple:
+ **The overall objective of this workshop is simple:**
 
 _Have fun while learning some basic programming concepts, and create your own version form of measuring or displaying time._
 
 Don't get too worried about not completely understanding a particular concept or being unable to achieve a specific exercise, as neither of those are the aims of the exercise.
 
-## However, do feel free to let your creativity run wild...
+**However, do feel free to let your creativity run wild...**
 
 feel free to go 'off piste' and go beyond the challenges we've laid out here.<br>
 Who knows, you might just reinvent the concept of time! 😜
@@ -292,7 +292,7 @@ _Find the change in **minute_angle** and **hour_angle** that correspond to the t
 
 # Design Your Own Clock
 
-## Team up! Group with your neighbours into teams of four people.
+#### Team up! Group with your neighbours into teams of four people.
 
 **Over the next fifteen minutes you are going to use everything you've learnt so far to create a clock of your own. At the end each group will have a minute to present their new clock idea!**
 
@@ -338,7 +338,7 @@ Prepare a quick presentation that answers some questions people might have about
 
 Here are some examples of clocks, with their sourcecode, for both inspiration and as a starting point
 
-## Simple Text Clock
+### Simple Text Clock
 
 This very basic code is a good starting point for creating your own text-based clock.
 
@@ -348,7 +348,7 @@ This very basic code is a good starting point for creating your own text-based c
 
 --------------------------------------------------------------------------------
 
-## Linear Clock
+### Linear Clock
 
 This clock lays the hours, minutes and seconds out in a table and highlights the current time.
 
@@ -360,7 +360,7 @@ How about playing around by removing all the lines, or creating a different shad
 
 --------------------------------------------------------------------------------
 
-## Binary Clock
+### Binary Clock
 
 This clock lays the hours, minutes and seconds out in binary. The first row is binary number for the hour, second row for minute, third row for second shown as picture below.
 
@@ -372,7 +372,7 @@ The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:47:18 Ca
 
 --------------------------------------------------------------------------------
 
-## Many Clocks
+### Many Clocks
 
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
@@ -382,7 +382,7 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 --------------------------------------------------------------------------------
 
-## Arc Clock
+### Arc Clock
 
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
 
@@ -392,15 +392,15 @@ By stacking multiple circles and arcs, this clock shows time as a circular loadi
 
 --------------------------------------------------------------------------------
 
-## Accelerating Clock
+### Accelerating Clock
 
 This clock gradually accelerates when clicked:
 
 ![Accelerating clock gif](examples/accelerating/recording_accelerating.gif)
 
-## [Sourcecode](examples/accelerating.pde)
+[Sourcecode](examples/accelerating.pde)
 
-## Blinking Clock
+### Blinking Clock
 
 Team "The Illuminati" created this slightly unnerving clock that blinks every second
 
@@ -410,9 +410,9 @@ Team "The Illuminati" created this slightly unnerving clock that blinks every se
 
 --------------------------------------------------------------------------------
 
---------------------------------------------------------------------------------
+<br>
 
-## Your Clock!
+### Your Clock!
 
 If your clock is quirky/cool enough, it could be added to this gallery for future workshops.
 
@@ -421,12 +421,11 @@ If your clock is quirky/cool enough, it could be added to this gallery for futur
 <br>
 
 --------------------------------------------------------------------------------
-
---------------------------------------------------------------------------------
+=
 
 <br>
 
-## Thanks!
+### Thanks!
 
 **We hope you enjoyed the workshop!**<br>
 If you have any feedback, either tell the person leading workshop, or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
