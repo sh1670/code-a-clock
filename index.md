@@ -65,7 +65,7 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 
 **First off we are going to introduce you to Processing by creating a simple drawing program.**
 
-![penup-pendown screenshot](source\drawing\recording_drawing.gif)
+![penup-pendown screenshot](examples\drawing\recording_drawing.gif)
 
 --------------------------------------------------------------------------------
 
@@ -238,7 +238,7 @@ void draw() {
 [Sourcecode on Github](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/source/analogue/analogue.pde)
 
 Now press the play button and it you should have a clock that looks like this:<br>
-![analogue clock screenshot](source\analogue\screenshot_analogue.png)
+![analogue clock screenshot](examples\analogue\screenshot_analogue.png)
 
 --------------------------------------------------------------------------------
 
@@ -337,7 +337,7 @@ Here are some examples of clocks, with their sourcecode, for both inspiration an
 
 This very basic code is a good starting point for creating your own text-based clock.
 
-![Text Clock Screenshot](source\text\screenshot_text.png)
+![Text Clock Screenshot](examples\text\screenshot_text.png)
 
 [Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/source/text/text.pde)
 
@@ -349,9 +349,9 @@ This clock lays the hours, minutes and seconds out in a table and highlights the
 
 How about playing around by removing all the lines, or creating a different shade for each block?
 
-![Linear Clock](source\linear\screenshot_linear.png)
+![Linear Clock](examples\linear\screenshot_linear.png)
 
-[Sourcecode](source\linear\linear.pde)
+[Sourcecode](examples\linear\linear.pde)
 
 --------------------------------------------------------------------------------
 
@@ -371,7 +371,7 @@ The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39 Ca
 
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
-![Many clocks](source\manyclocks\recording_manyclocks.gif)
+![Many clocks](examples\manyclocks\recording_manyclocks.gif)
 
 [Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/many_random.pde)
 
@@ -381,7 +381,7 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
 
-![Many clocks](images/screenshot_circular.png)
+![Arc clock screenshot](examples\arc\screenshot_arc.png)
 
 [Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/arc.pde)
 
