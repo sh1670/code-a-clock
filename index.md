@@ -2,8 +2,9 @@
 title: Code A Clock Workshop
 ---
 
-![swirly clock](images/swirly.jpg) | ![flippy clock](images/flipclock.png) | ![text clock](images/textclock.jpg)
----------------------------------- | ------------------------------------- | -----------------------------------
+![swirly clock](img/swirly.jpg) | ![flippy clock](img/flipclock.png) | ![text clock](img/textclock.jpg)
+------------------------------- | ---------------------------------- | --------------------------------
+                                |
 
 # Workshop Objective: Reinvent the Clock
 
@@ -176,7 +177,7 @@ Here are a few extensions you could try:
 **In this exercise you will be creatively modifying the code for a program that draws a working clock.**
 
 First create a new Processing sketch (File -> New)<br>
-Then copy and paste in [this code](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/source/analogue/analogue.pde) for a simple analogue clock:
+Then copy and paste in [this code](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/examples/analogue/analogue.pde) for a simple analogue clock:
 
 ```java
 int clockCentreX, clockCentreY;
@@ -235,7 +236,7 @@ void draw() {
 }
 ```
 
-[Sourcecode on Github](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/source/analogue/analogue.pde)
+[Sourcecode on Github](examples/analogue/analogue.pde)
 
 Now press the play button and it you should have a clock that looks like this:<br>
 ![analogue clock screenshot](examples\analogue\screenshot_analogue.png)
@@ -349,7 +350,7 @@ This clock lays the hours, minutes and seconds out in a table and highlights the
 
 How about playing around by removing all the lines, or creating a different shade for each block?
 
-![Linear Clock](examples/linear/screenshot_linear.png)
+![Linear Clock Screenshot](examples/linear/screenshot_linear.png)
 
 [Sourcecode](examples/linear/linear.pde)
 
@@ -357,13 +358,13 @@ How about playing around by removing all the lines, or creating a different shad
 
 ## Binary Clock
 
-This clock lays the hours, minutes and seconds out in binary. The first line is binary number for the hour, second line for minute, third line for second shown as picture below.
+This clock lays the hours, minutes and seconds out in binary. The first row is binary number for the hour, second row for minute, third row for second shown as picture below.
 
-![Binary Clock](images/screenshot_binary.png)
+![Binary Clock Screenshot](examples/binary/screenshot_binary.png)
 
-The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39 Can you tell why?
+The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:47:18 Can you tell why?
 
-[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/binary_clock.pde)
+[Sourcecode](examples/binary/binary.pde)
 
 --------------------------------------------------------------------------------
 
@@ -371,9 +372,9 @@ The picture above reads: 001111 hours, 001010 mins, 100111 seconds = 15:10:39 Ca
 
 A previous team of workshop attendees converted the given clock code into a class, to allow 100 random clock to be spawned:
 
-![Many clocks](examples\manyclocks\recording_manyclocks.gif)
+![Manyclocks gif](examples/manyclocks/recording_manyclocks.gif)
 
-[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/many_random.pde)
+[Sourcecode](examples/manyclocks.pde)
 
 --------------------------------------------------------------------------------
 
@@ -381,9 +382,29 @@ A previous team of workshop attendees converted the given clock code into a clas
 
 By stacking multiple circles and arcs, this clock shows time as a circular loading bar:
 
-![Arc clock screenshot](examples\arc\screenshot_arc.png)
+![Arc clock gif](examples/arc/recording_arc.gif)
 
-[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/example_code/arc.pde)
+[Sourcecode](examples/arc.pde)
+
+--------------------------------------------------------------------------------
+
+## Accelerating Clock
+
+This clock gradually accelerates when clicked:
+
+![Accelerating clock gif](examples/accelerating/recording_accelerating.gif)
+
+## [Sourcecode](examples/accelerating.pde)
+
+## Blinking Clock
+
+Team "The Illuminati" created this slightly unnerving clock that blinks every second
+
+![Arc clock gif](examples/blink/recording_blink.gif)
+
+[Sourcecode](examples/blink.pde)
+
+--------------------------------------------------------------------------------
 
 --------------------------------------------------------------------------------
 
@@ -394,20 +415,17 @@ If your clock is quirky/cool enough, it could be added to this gallery for futur
 [Submit your code here!](https://goo.gl/forms/sGz90psADcLvI8ge2)
 
 <br>
-<br>
-<br>
 
 --------------------------------------------------------------------------------
 
-<br>
-<br>
+--------------------------------------------------------------------------------
+
 <br>
 
 ## Thanks!
 
 **We hope you enjoyed the workshop!**<br>
-If you have any feedback, either tell the person leading workshop,<br>
-or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
+If you have any feedback, either tell the person leading workshop, or fill out an issue on the [Github Repo](https://github.com/LukeStorry/code-a-clock/issues).
 
 :)
 
