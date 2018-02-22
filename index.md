@@ -26,7 +26,7 @@ Who knows, you might just reinvent the concept of time! 😜
 
 **In this activity you will be using [Processing](https://processing.org), a Java based flexible software sketchbook.**
 
-![Processing Logo](img\processing_logo.png)
+![Processing Logo](img/processing_logo.png)
 
 > If you are doing this workshop in a lab on a University Visit Day, then Processing will already be installed and will be set up on half of your screen.<br>
 > If not, [Click Here](https://processing.org/tutorials/gettingstarted/) for more info on getting started.
@@ -337,9 +337,9 @@ Here are some examples of clocks, with their sourcecode, for both inspiration an
 
 This very basic code is a good starting point for creating your own text-based clock.
 
-![Text Clock Screenshot](examples\text\screenshot_text.png)
+![Text Clock Screenshot](examples/text/screenshot_text.png)
 
-[Sourcecode](https://raw.githubusercontent.com/LukeStorry/code-a-clock/master/source/text/text.pde)
+[Sourcecode](examples/text/text.pde)
 
 --------------------------------------------------------------------------------
 
@@ -349,9 +349,9 @@ This clock lays the hours, minutes and seconds out in a table and highlights the
 
 How about playing around by removing all the lines, or creating a different shade for each block?
 
-![Linear Clock](examples\linear\screenshot_linear.png)
+![Linear Clock](examples/linear/screenshot_linear.png)
 
-[Sourcecode](examples\linear\linear.pde)
+[Sourcecode](examples/linear/linear.pde)
 
 --------------------------------------------------------------------------------
 
