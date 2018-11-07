@@ -237,7 +237,6 @@ void draw() {
         }
         endShape();
 }
-}
 ```
 
 [Sourcecode on Github](examples/analogue/analogue.pde)
