@@ -16,7 +16,7 @@ Have fun while learning some basic programming concepts, and create a custom for
 
 #### In this activity we use [Processing](https://processing.org), a Java based flexible software sketchbook.
 
-![Processing Logo](images/processing_logo.png)
+![Processing Logo](img/processing_logo.png)
 
 > Processing is easy for creating visual art with a few simple lines, and is ideal for learning how to code. 
 
