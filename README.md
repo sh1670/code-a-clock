@@ -35,7 +35,14 @@ This workshop was created for Applicant Visit Days at the University of Bristol,
 - 15:10 Presentations
 
 
-
 ---
+### Setup
+Although it's simple to download the processing tgz and load up the workshop,
+when running large workshops it can be useful to pre-setup many accounts.
+
+Therefore the `openday-setup.py` script can be run from any lab machine (or snowy), 
+just put a `passwords.csv` file in the same folder and it will download the tgz, and scp it over to all the accounts,
+along with a `.bash_profile` that automatically unzips the tgz, runs processing, and opens up the workshop in Firefox.
+
 
 Adapted from Pete Bennett's- https://tinyurl.com/y9cuqury

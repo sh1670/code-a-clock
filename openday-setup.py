@@ -7,30 +7,29 @@ downloader = pexpect.spawn('wget -nc -O processing.tgz http://download.processin
 downloader.expect(pexpect.EOF)
 
 print("Creating .bashprofile_temp to copy")
-with open('.bash_profile_temp', 'w') as bashprofile:
-    bashprofile.write('firefox http://lukestorry.com/code-a-clock &')
-    bashprofile.write('tar -xzf ~/processing.tgz;')
-    bashprofile.write('~/processing/processing &')
+with open('temp_bash_profile', 'w') as bashprofile:
+    bashprofile.write('firefox http://lukestorry.com/code-a-clock & ')
+    bashprofile.write('tar -xzf ~/processing.tgz;\n')
+    bashprofile.write('~/processing-3.4/processing &')
 
 with open('passwords.csv', 'r') as csvfile:
     reader = csv.reader(csvfile)
     for username, password in reader:
+	print
+        print "SCPing files to", username, password
 
-        print "starting scp for", username, password, "-",
-
-        scp_bash = pexpect.spawn("scp .bash_profile_temp %s@snowy.cs.bris.ac.uk:./.bash_profile" % username)
+        scp_bash = pexpect.spawn("scp temp_bash_profile %s@it025960.users.bris.ac.uk:./.bash_profile" % username)
         needs_confimation = scp_bash.expect(["password", "yes"])
         if needs_confimation:
             scp_bash.sendline("yes")
             scp_bash.expect("password")
         scp_bash.sendline(password)
+	print scp_bash.read(),
 
-        print "copied .bash_profile -",
-
-        scp_processing = pexpect.spawn("scp processing.tgz %s@snowy.cs.bris.ac.uk:." % username)
+        scp_processing = pexpect.spawn("scp processing.tgz %s@it025960.users.bris.ac.uk:." % username)
         scp_processing.expect("password", timeout=5)
         scp_processing.sendline(password)
-
-        print "copied processing.tgz"
+	print scp_processing.read()
+	print
 
 print "All done!"
