@@ -207,7 +207,7 @@ void draw() {
 
         // calculate angles
         float second_angle = map(second(), 0, 60, 0, TWO_PI) - HALF_PI;
-        float minute_angle = map(minute()+5 + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
+        float minute_angle = map(minute() + norm(second(), 0, 60), 0, 60, 0, TWO_PI) - HALF_PI;
         float hour_angle = map(hour() + norm(minute(), 0, 60), 0, 24, 0, TWO_PI * 2) - HALF_PI;
 
         // draw clock face
