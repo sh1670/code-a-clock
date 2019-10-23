@@ -3,8 +3,8 @@
 
 Workshop created for use as a demonstration lab session for UoB open days / applicant visit days.
 
-### [Live Website](https://lukestorry.co.uk/code-a-clock/)
-![Website https://lukestorry.co.uk/code-a-clock/](https://img.shields.io/website-up-down-green-red/https/lukestorry.co.uk/code-a-clock.svg)
+### [Live Website](https://sh1670.github.io/code-a-clock/)
+![Website https://sh1670.github.io/code-a-clock/]
 
 
 ---
