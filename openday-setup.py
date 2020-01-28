@@ -15,7 +15,7 @@ print downloader.read()
 
 print("Creating .bashprofile_temp to copy")
 with open('temp_bash_profile', 'w') as bashprofile:
-    bashprofile.write('firefox http://lukestorry.com/code-a-clock & ')
+    bashprofile.write('firefox https://sh1670.github.io/code-a-clock & ')
     bashprofile.write('tar -xzf ~/processing-3.5.3-linux64.tgz;\n')
     bashprofile.write('~/processing-3.5.3/processing &')
 
